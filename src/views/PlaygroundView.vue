@@ -1,9 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main>Playground view</main>
 </template>
 
 <style scoped></style>
