@@ -5,11 +5,11 @@ import { RouterLink } from 'vue-router';
 <template>
   <header class="app-header">
     <img
-      alt="Vue logo"
+      alt="Hiro logo"
       class="logo"
-      src="@/assets/logo.svg"
-      width="50"
-      height="50"
+      src="@/assets/hiro-logo.png"
+      width="126"
+      height="86"
     />
     <nav>
       <RouterLink to="/">Home</RouterLink>
