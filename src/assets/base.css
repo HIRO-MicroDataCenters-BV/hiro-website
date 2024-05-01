@@ -2,15 +2,15 @@
 :root {
   --hiro-c-black: #050611;
 
-  --hiro-c-light-green: #E8FFD8;
-  --hiro-c-green: #5E9736;
-  --hiro-c-khaki: #43622E;
-  --hiro-c-dark-green: #1F3112;
+  --hiro-c-light-green: #e8ffd8;
+  --hiro-c-green: #5e9736;
+  --hiro-c-khaki: #43622e;
+  --hiro-c-dark-green: #1f3112;
 
-  --hiro-c-bronze: #CD8E17;
-  --hiro-c-white: #F8F8F8;
-  --hiro-c-gray: #84878A;
-  --hiro-c-dark-gray: #494E52;
+  --hiro-c-bronze: #cd8e17;
+  --hiro-c-white: #f8f8f8;
+  --hiro-c-gray: #84878a;
+  --hiro-c-dark-gray: #494e52;
 }
 
 /* semantic color variables for this project */
@@ -18,7 +18,7 @@
   --color-background: var(--hiro-c-black);
   --color-heading: var(--hiro-c-bronze);
 
-  --color-text: #FFFFFF;
+  --color-text: #ffffff;
 }
 
 *,
@@ -31,17 +31,10 @@
 
 body {
   color: var(--color-text);
-  background: url("background.svg");
+  background: url('background.svg');
   background-size: cover;
-  font-family:
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   font-size: 0.875rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

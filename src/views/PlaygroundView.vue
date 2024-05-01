@@ -2,12 +2,13 @@
 import AppCard from '@/components/AppCard.vue';
 const testCard = {
   label: 'Label',
-  text: 'Lorem ipsum dolor sit amet, ' +
+  text:
+    'Lorem ipsum dolor sit amet, ' +
     'consectetur adipisicing elit. ' +
     'A delectus sunt vero voluptate. ' +
     'Adipisci deleniti dolorem ' +
-    'magnam optio quas sunt.'
-}
+    'magnam optio quas sunt.',
+};
 </script>
 
 <template>

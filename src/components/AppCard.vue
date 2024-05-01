@@ -31,7 +31,7 @@ defineProps({
   padding: 30px;
   width: 342px;
   height: 190px;
-  background: url("border.svg");
+  background: url('border.svg');
   background-size: cover;
 }
 
