@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router';
     <img
       alt="Hiro logo"
       class="logo"
-      src="@/assets/hiro-logo.png"
+      src="./assets/hiro-logo.png"
       width="126"
       height="86"
     />
