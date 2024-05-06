@@ -12,6 +12,7 @@
 .app-footer {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 50px;
 }
 
