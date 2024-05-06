@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { RouterLink, useRouter } from 'vue-router';
 import { computed } from 'vue';
-const router = useRouter()
+const router = useRouter();
 
-const currentPathObject = computed(() => router.currentRoute.value.name || 'Home');
+const currentPathObject = computed(
+  () => router.currentRoute.value.name || 'Home',
+);
 </script>
 
 <template>
@@ -16,10 +18,10 @@ const currentPathObject = computed(() => router.currentRoute.value.name || 'Home
         width="126"
         height="86"
       />
-        These buttons are temporary
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/playground">Playground</RouterLink>
+      These buttons are temporary
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/playground">Playground</RouterLink>
     </nav>
     <div class="app-header__heading">
       <h1 class="app-header__heading-text">
@@ -43,7 +45,7 @@ const currentPathObject = computed(() => router.currentRoute.value.name || 'Home
   display: flex;
   justify-content: center;
   padding: 1rem 0;
-  background: url("./assets/header-h1.svg") bottom no-repeat;
+  background: url('./assets/header-h1.svg') bottom no-repeat;
   text-shadow: 0 4px 4px rgba(255, 255, 255, 0.25);
 }
 
