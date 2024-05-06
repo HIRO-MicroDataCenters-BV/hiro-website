@@ -13,10 +13,21 @@ const testCard = {
 
 <template>
   <main>
-    <AppCard
-      :label="testCard.label"
-      :text="testCard.text"
-    />
+    <section>
+      <AppCard
+        :label="testCard.label"
+        :text="testCard.text"
+      />
+      <AppCard
+        :label="testCard.label"
+        :text="testCard.text"
+        isAlternativeColor
+      />
+      <AppCard
+        :label="testCard.label"
+        :text="testCard.text"
+      />
+    </section>
   </main>
 </template>
 
