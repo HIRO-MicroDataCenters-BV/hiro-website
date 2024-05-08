@@ -21,10 +21,14 @@ let graph: Graph;
 
 interface Props {
   activeCube: NodeNameValue | null;
-  onChange: (value: NodeNameValue) => void;
+}
+
+interface Emits {
+  (e: 'change', value: NodeNameValue): void
 }
 
 const props = defineProps<Props>();
+const emit = defineEmits<Emits>();
 
 function animate() {
   requestAnimationFrame(animate);
@@ -144,7 +148,7 @@ function onMouseClick() {
       const nodeName = cube.name;
       if (nodeName) {
         graph.setActive(cube);
-        props.onChange(nodeName);
+        emit('change', nodeName);
       }
     }
   }
@@ -154,8 +158,6 @@ window.addEventListener('resize', resizeHandler);
 onBeforeUnmount(() => {
   window.removeEventListener('resize', resizeHandler);
 });
-
-window.addEventListener('mousemove', onMouseMove, false);
 </script>
 
 <template>
@@ -163,5 +165,6 @@ window.addEventListener('mousemove', onMouseMove, false);
     class="graph"
     ref="canvasWrapper"
     @click="onMouseClick"
+    @mousemove="onMouseMove"
   ></div>
 </template>

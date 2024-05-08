@@ -19,7 +19,7 @@ const handleChange = (value: NodeNameValue) => {
     <div style="width: 50%; margin: 0 auto">
       <Graph
         :activeCube="activeCube"
-        :onChange="handleChange"
+        @change="handleChange"
       />
     </div>
   </main>
