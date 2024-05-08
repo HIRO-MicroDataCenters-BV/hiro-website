@@ -14,9 +14,9 @@ const currentPathObject = computed(
       <img
         alt="Hiro logo"
         class="logo"
-        src="./assets/hiro-logo.png"
-        width="126"
-        height="86"
+        src="@/assets/hiro-logo.svg"
+        height="100"
+        width="181"
       />
       These buttons are temporary
       <RouterLink to="/">Home</RouterLink>
