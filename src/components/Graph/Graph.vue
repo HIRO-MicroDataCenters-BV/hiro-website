@@ -156,12 +156,12 @@ onBeforeUnmount(() => {
 });
 
 window.addEventListener('mousemove', onMouseMove, false);
-window.addEventListener('click', onMouseClick, false);
 </script>
 
 <template>
   <div
     class="graph"
     ref="canvasWrapper"
+    @click="onMouseClick"
   ></div>
 </template>
