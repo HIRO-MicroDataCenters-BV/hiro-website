@@ -8,11 +8,18 @@ defineProps({
     type: String,
     required: false,
   },
+  isAlternativeColor: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 
 <template>
-  <div class="app-card">
+  <div
+    class="app-card"
+    :class="{ 'app-card--alternative-color': isAlternativeColor }"
+  >
     <div class="app-card__label">
       {{ label }}
     </div>
@@ -31,8 +38,12 @@ defineProps({
   padding: 30px;
   width: 342px;
   height: 190px;
-  background: url('border.svg');
+  background: url('card-border.svg');
   background-size: cover;
+
+  &.app-card--alternative-color {
+    background: url('card-border-alt.svg');
+  }
 }
 
 .app-card__label {
