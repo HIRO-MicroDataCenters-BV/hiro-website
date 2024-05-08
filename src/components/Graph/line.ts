@@ -27,7 +27,7 @@ class LineWithSphere {
   private drawLine(): Line2 {
     const material = new LineMaterial({
       color: this.lineColor,
-      linewidth: this.linewidth
+      linewidth: this.linewidth,
     });
     const points = [...this.a, ...this.b];
     const geometry = new LineGeometry();

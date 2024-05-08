@@ -44,7 +44,7 @@ function createMaterialWithText(
 }
 
 interface ICube {
-    create(): THREE.Mesh
+  create(): THREE.Mesh;
 }
 
 class CubeBase {

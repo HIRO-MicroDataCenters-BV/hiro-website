@@ -16,8 +16,11 @@ const handleChange = (value: NodeNameValue) => {
     <h1>Home view</h1>
 
     <p>Active cube: {{ activeCube }}</p>
-    <div style="width: 50%; margin: 0 auto;">
-      <Graph :activeCube="activeCube" :onChange="handleChange" />
+    <div style="width: 50%; margin: 0 auto">
+      <Graph
+        :activeCube="activeCube"
+        :onChange="handleChange"
+      />
     </div>
   </main>
 </template>

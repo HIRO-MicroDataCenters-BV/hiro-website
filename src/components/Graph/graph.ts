@@ -108,7 +108,7 @@ class Graph {
   }
 
   create(): void {
-    loadFont('Roboto-Bold', '/fonts/Roboto/Roboto-Bold.ttf', "700").then(() => {
+    loadFont('Roboto-Bold', '/fonts/Roboto/Roboto-Bold.ttf', '700').then(() => {
       this.createLines();
       this.createNodes();
     });
@@ -120,10 +120,10 @@ class Graph {
     });
 
     const time = this.clock.getElapsedTime();
-    this.group.position.y += Math.sin(1000 + time) / 3000
-    this.group.rotation.x += (Math.sin(time) * Math.PI) / 30000
-    this.group.rotation.y += (Math.sin(time) * Math.PI) / 30000
-    this.group.rotation.z += (Math.sin(time) * Math.PI) / 30000
+    this.group.position.y += Math.sin(1000 + time) / 3000;
+    this.group.rotation.x += (Math.sin(time) * Math.PI) / 30000;
+    this.group.rotation.y += (Math.sin(time) * Math.PI) / 30000;
+    this.group.rotation.z += (Math.sin(time) * Math.PI) / 30000;
 
     TWEEN.update();
   }
