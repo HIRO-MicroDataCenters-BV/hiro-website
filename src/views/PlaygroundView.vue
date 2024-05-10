@@ -34,9 +34,7 @@ const testCard = {
         :text="testCard.text"
       />
     </section>
-    <section class="graph-section">
-      <AppGraph :active-cube="activeCube" />
-    </section>
+    <AppGraph class="graph-section" :active-cube="activeCube" />
     <section class="card-section">
       <AppCard
         :label="testCard.label"
@@ -75,10 +73,6 @@ const testCard = {
 }
 
 .graph-section {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 40%;
 }
 </style>
