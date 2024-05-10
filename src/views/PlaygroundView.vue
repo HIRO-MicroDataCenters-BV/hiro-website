@@ -1,5 +1,11 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import AppCard from '@/components/AppCard.vue';
+import AppGraph from '@/components/Graph';
+
+import type { NodeNameValue } from '@/components/Graph';
+
+const activeCube = ref<NodeNameValue | null>(null);
 const testCard = {
   label: 'Label',
   text:
@@ -28,7 +34,9 @@ const testCard = {
         :text="testCard.text"
       />
     </section>
-    <div></div>
+    <section class="graph-section">
+      <AppGraph :active-cube="activeCube" />
+    </section>
     <section class="card-section">
       <AppCard
         :label="testCard.label"
@@ -62,6 +70,14 @@ const testCard = {
   gap: 20px;
   width: fit-content;
   height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.graph-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
