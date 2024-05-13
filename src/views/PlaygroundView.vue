@@ -34,7 +34,10 @@ const testCard = {
         :text="testCard.text"
       />
     </section>
-    <AppGraph class="graph-section" :active-cube="activeCube" />
+    <AppGraph
+      class="graph-section"
+      :active-cube="activeCube"
+    />
     <section class="card-section">
       <AppCard
         :label="testCard.label"
