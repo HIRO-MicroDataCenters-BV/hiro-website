@@ -31,8 +31,8 @@
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^8.49.0",
     "eslint-plugin-vue": "^9.17.0",
-    "husky": ">=7",
-    "lint-staged": ">=10",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.2",
     "npm-run-all2": "^6.1.2",
     "postcss-nesting": "^12.1.1",
     "prettier": "^3.0.3",
@@ -43,6 +43,6 @@
   "packageManager": "pnpm@9.0.5+sha256.61bd66913b52012107ec25a6ee4d6a161021ab99e04f6acee3aa50d0e34b4af9",
   "lint-staged": {
     "*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}": "eslint --cache --fix",
-    "*.src/": "prettier --write"
+    "*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,html,css}": "prettier --write"
   }
 }
