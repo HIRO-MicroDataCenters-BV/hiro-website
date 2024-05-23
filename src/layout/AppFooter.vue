@@ -26,12 +26,16 @@
 }
 
 .app-footer__center {
-  background: url('assets/footer-bg.svg') top no-repeat;
+  background: url('assets/footer-bg-mobile.svg') top no-repeat;
   width: 873px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
+
+  @media (min-width: 1280px) {
+    background: url('assets/footer-bg.svg') top no-repeat;
+  }
 }
 </style>

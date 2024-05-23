@@ -18,7 +18,6 @@ const currentPathObject = computed(
         height="100"
         width="181"
       />
-      These buttons are temporary
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
       <RouterLink to="/playground">Playground</RouterLink>
@@ -28,20 +27,27 @@ const currentPathObject = computed(
         {{ currentPathObject }}
       </h1>
     </div>
+    <div style="flex: 1"></div>
   </header>
 </template>
 
 <style scoped>
 .app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 0;
 }
 
 .app-header nav {
   display: flex;
   align-items: center;
+  flex: 1;
 }
 
 .app-header__heading {
+  flex: 1;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 1rem 0;
