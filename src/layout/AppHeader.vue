@@ -19,7 +19,7 @@ const currentPathObject = computed(
         width="181"
       />
       <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/services">About</RouterLink>
       <RouterLink to="/playground">Playground</RouterLink>
     </nav>
     <div class="app-header__heading">
