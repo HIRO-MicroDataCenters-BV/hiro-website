@@ -27,7 +27,7 @@ const testCard = {
       <AppCard
         :label="testCard.label"
         :text="testCard.text"
-        isAlternativeColor
+        is-alternative-color
       />
       <AppCard
         :label="testCard.label"
@@ -46,7 +46,7 @@ const testCard = {
       <AppCard
         :label="testCard.label"
         :text="testCard.text"
-        isAlternativeColor
+        is-alternative-color
       />
       <AppCard
         :label="testCard.label"
