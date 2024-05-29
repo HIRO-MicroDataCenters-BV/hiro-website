@@ -2,9 +2,12 @@
 
 <template>
   <footer class="app-footer">
-    <section class="app-footer__side">Our Customers</section>
-    <section class="app-footer__center">Contact Us</section>
-    <section class="app-footer__side">Technology Pillars</section>
+    <section class="app-footer__side">
+      <RouterLink to="/">Our Customers</RouterLink>
+    </section>
+    <section class="app-footer__side">
+      <RouterLink to="/service">Our service</RouterLink>
+    </section>
   </footer>
 </template>
 
@@ -23,19 +26,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.app-footer__center {
-  background: url('assets/footer-bg-mobile.svg') top no-repeat;
-  width: 873px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-
-  @media (min-width: 1280px) {
-    background: url('assets/footer-bg.svg') top no-repeat;
+  a {
+    color: var(--color-text);
   }
 }
 </style>

@@ -1,26 +1,65 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import AppCard from '@/components/AppCard.vue';
+import { customerCards } from '@/constants/home-page';
+import AppCardLink from '@/components/AppCardLink.vue';
 
-import AppGraph from '@/components/Graph';
-import type { NodeNameValue } from '@/components/Graph';
-
-const activeCube = ref<NodeNameValue | null>(null);
-
-const handleChange = (value: NodeNameValue) => {
-  activeCube.value = value;
-};
+const { industry, energyGrid, city, agriculture, health } = customerCards;
 </script>
 
 <template>
-  <main>
-    <h1>Home view</h1>
-
-    <p>Active cube: {{ activeCube }}</p>
-    <div style="width: 50%; margin: 0 auto">
-      <AppGraph
-        :activeCube="activeCube"
-        @change="handleChange"
+  <main class="customers-view">
+    <section class="customers-view__upper-section">
+      <AppCardLink
+        :label="industry.title"
+        :text="industry.description"
+        :route="industry.route"
       />
-    </div>
+      <AppCardLink
+        :label="energyGrid.title"
+        :text="energyGrid.description"
+        :route="energyGrid.route"
+      />
+      <AppCardLink
+        :label="city.title"
+        :text="city.description"
+        :route="city.route"
+      />
+    </section>
+    <section class="customers-view__lower-section">
+      <AppCardLink
+        :label="agriculture.title"
+        :text="agriculture.description"
+        :route="agriculture.route"
+      />
+      <AppCard
+        :label="agriculture.title"
+        :text="agriculture.description"
+      />
+      <AppCardLink
+        :label="health.title"
+        :text="health.description"
+        :route="health.route"
+      />
+    </section>
   </main>
 </template>
+
+<style scoped>
+.customers-view {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customers-view__upper-section {
+  display: flex;
+  gap: 1rem;
+}
+
+.customers-view__lower-section {
+  display: flex;
+  gap: 1rem;
+}
+</style>

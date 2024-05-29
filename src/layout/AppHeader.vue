@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, useRouter } from 'vue-router';
 import { computed } from 'vue';
+
 const router = useRouter();
 
 const currentPathObject = computed(
@@ -11,14 +12,15 @@ const currentPathObject = computed(
 <template>
   <header class="app-header">
     <nav>
-      <img
-        alt="Hiro logo"
-        class="logo"
-        src="@/assets/hiro-logo.svg"
-        height="100"
-        width="181"
-      />
-      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/">
+        <img
+          alt="Hiro logo"
+          class="logo"
+          src="@/assets/hiro-logo.svg"
+          height="100"
+          width="181"
+        />
+      </RouterLink>
       <RouterLink to="/services">About</RouterLink>
       <RouterLink to="/playground">Playground</RouterLink>
     </nav>
