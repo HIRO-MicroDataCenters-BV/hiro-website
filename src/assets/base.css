@@ -11,6 +11,11 @@
   --hiro-c-white: #f8f8f8;
   --hiro-c-gray: #84878a;
   --hiro-c-dark-gray: #494e52;
+
+  --hiro-c-cube-green: #19a941;
+  --hiro-c-cube-blue: #0c68aa;
+  --hiro-c-cube-violet: #851eb6;
+  --hiro-c-cube-yellow: #d49f30;
 }
 
 /* semantic color variables for this project */

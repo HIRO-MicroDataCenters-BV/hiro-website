@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AppCard from '@/components/AppCard.vue';
-import { customerCards } from '@/constants/home-page';
+import { customerCards, joinUsCard } from '@/constants/home-page';
 import AppCardLink from '@/components/AppCardLink.vue';
 
 const { industry, energyGrid, city, agriculture, health } = customerCards;
@@ -32,8 +32,8 @@ const { industry, energyGrid, city, agriculture, health } = customerCards;
         :route="agriculture.route"
       />
       <AppCard
-        :label="agriculture.title"
-        :text="agriculture.description"
+        :label="joinUsCard.title"
+        :text="joinUsCard.description"
       />
       <AppCardLink
         :label="health.title"

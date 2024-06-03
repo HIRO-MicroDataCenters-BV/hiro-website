@@ -12,27 +12,27 @@ const router = createRouter({
     {
       path: '/agriculture',
       name: 'agriculture 3.0',
-      component: () => import('../views/PlaygroundView.vue'),
+      component: () => import('../views/AgricultureView.vue'),
     },
     {
       path: '/city',
       name: 'city 2.0',
-      component: () => import('../views/PlaygroundView.vue'),
+      component: () => import('../views/CityView.vue'),
     },
     {
       path: '/health',
       name: 'health 3.0',
-      component: () => import('../views/PlaygroundView.vue'),
+      component: () => import('../views/HealthView.vue'),
     },
     {
       path: '/industry',
       name: 'industry 4.0',
-      component: () => import('../views/PlaygroundView.vue'),
+      component: () => import('../views/IndustryView.vue'),
     },
     {
       path: '/energy-grid',
       name: 'energy grid 3.0',
-      component: () => import('../views/PlaygroundView.vue'),
+      component: () => import('../views/EnergyGridView.vue'),
     },
     {
       path: '/services',

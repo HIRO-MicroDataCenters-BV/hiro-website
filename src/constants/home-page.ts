@@ -54,3 +54,15 @@ export const customerCards = {
     route: '/health',
   },
 };
+
+export const joinUsCard = {
+  title: 'Join Us!',
+  description:
+    'Technology reshapes the way we live and work, the call for digital ' +
+    'transformation has never been more urgent. Join us as we explore ' +
+    'the boundless opportunities that digital technologies bring ' +
+    'to industries and communities worldwide. ' +
+    'Discover how Powerful Edge as a Service (PEaaS) ' +
+    'delivers you digital sovereignty that can amplify ' +
+    'your operational efficiency and streamline supply chains.',
+};

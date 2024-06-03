@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import AppCard from '@/components/AppCard.vue';
-import AppGraph from '@/components/Graph';
-
 import type { NodeNameValue } from '@/components/Graph';
+import AppGraph from '@/components/Graph';
 
 const activeCube = ref<NodeNameValue | null>(null);
 const testCard = {
@@ -23,15 +22,12 @@ const testCard = {
       <AppCard
         :label="testCard.label"
         :text="testCard.text"
+        cube-variant="edge-cloud-services"
       />
       <AppCard
         :label="testCard.label"
         :text="testCard.text"
-        is-alternative-color
-      />
-      <AppCard
-        :label="testCard.label"
-        :text="testCard.text"
+        cube-variant="edge-micro-data-centers"
       />
     </section>
     <AppGraph
@@ -42,15 +38,12 @@ const testCard = {
       <AppCard
         :label="testCard.label"
         :text="testCard.text"
+        cube-variant="data-spaces"
       />
       <AppCard
         :label="testCard.label"
         :text="testCard.text"
-        is-alternative-color
-      />
-      <AppCard
-        :label="testCard.label"
-        :text="testCard.text"
+        cube-variant="cognitive-engine"
       />
     </section>
   </div>
