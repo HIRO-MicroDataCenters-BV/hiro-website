@@ -28,12 +28,7 @@ defineProps({
       class="app-card-link"
       :class="{ 'app-card-link--alternative-color': isAlternativeColor }"
     >
-      <div
-        class="app-card-link__label"
-        :class="{
-          [`app-card-link__label--${cubeVariant}`]: Boolean(cubeVariant),
-        }"
-      >
+      <div class="app-card-link__label">
         {{ label }}
       </div>
       <div class="app-card-link__body">
