@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { cubeParts } from '@/constants/cube-parts';
+
 defineProps({
   label: {
     type: String,
@@ -45,6 +47,10 @@ defineProps({
       >
         {{ label }}
       </div>
+      <component
+        :is="cubeParts[cubeVariant as keyof typeof cubeParts]"
+        v-if="cubeVariant"
+      />
     </div>
     <div class="app-card__body">
       {{ text }}
