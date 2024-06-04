@@ -62,7 +62,7 @@ defineProps({
 .app-card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   position: relative;
   padding: 30px;
   width: 342px;
@@ -77,6 +77,8 @@ defineProps({
 
 .app-card__label-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .app-card__label {
