@@ -16,7 +16,7 @@ const currentPathObject = computed(
         <img
           alt="Hiro logo"
           class="logo"
-          src="@/assets/hiro-logo.svg"
+          src="@/assets/hiro-logo.svg?url"
           height="100"
           width="181"
         />
