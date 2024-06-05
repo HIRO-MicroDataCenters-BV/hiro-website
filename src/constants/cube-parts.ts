@@ -5,9 +5,17 @@ import GovernanceIcon from '@/assets/cube-parts/governance.svg?skipsvgo';
 import EdgeMicroDataCentersIcon from '@/assets/cubes/empty.svg';
 
 export const cubeParts = {
-  'cognitive-engine': CognitiveEngineIcon,
-  'data-spaces': DataSpacesIcon,
-  'edge-cloud-services': EdgeCloudServicesIcon,
-  governance: GovernanceIcon,
-  'edge-micro-data-centers': EdgeMicroDataCentersIcon,
+  cognitiveEngine: 'cognitive-engine',
+  dataSpaces: 'data-spaces',
+  edgeCloudServices: 'edge-cloud-services',
+  governance: 'governance',
+  edgeMicroDataCenters: 'edge-micro-data-centers',
+};
+
+export const cubePartsIcons = {
+  [cubeParts.cognitiveEngine]: CognitiveEngineIcon,
+  [cubeParts.dataSpaces]: DataSpacesIcon,
+  [cubeParts.edgeCloudServices]: EdgeCloudServicesIcon,
+  [cubeParts.governance]: GovernanceIcon,
+  [cubeParts.edgeMicroDataCenters]: EdgeMicroDataCentersIcon,
 };

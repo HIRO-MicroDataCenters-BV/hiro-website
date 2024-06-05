@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { cubeParts } from '@/constants/cube-parts';
+import { cubeParts, cubePartsIcons } from '@/constants/cube-parts';
 
 defineProps({
   label: {
@@ -20,15 +20,7 @@ defineProps({
     type: String,
     required: false,
     default: '',
-    validator: (value: string) =>
-      [
-        'cognitive-engine',
-        'data-spaces',
-        'edge-cloud-services',
-        'governance',
-        'edge-micro-data-centers',
-        '',
-      ].includes(value),
+    validator: (value: string) => Object.values(cubeParts).includes(value),
   },
 });
 </script>
@@ -48,7 +40,7 @@ defineProps({
         {{ label }}
       </div>
       <component
-        :is="cubeParts[cubeVariant as keyof typeof cubeParts]"
+        :is="cubePartsIcons[cubeVariant as keyof typeof cubePartsIcons]"
         v-if="cubeVariant"
       />
     </div>
