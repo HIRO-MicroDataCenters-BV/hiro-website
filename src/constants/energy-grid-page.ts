@@ -37,6 +37,7 @@ const energyGridCards = [
       'a holistic view of operations, ' +
       'security and governance that ' +
       'allows more informed decision-making processes.',
+    type: cubeParts.dataSpaces,
   },
   {
     title: 'Cognitive Engine',
