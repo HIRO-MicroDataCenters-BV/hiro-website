@@ -6,7 +6,7 @@
       <RouterLink to="/">Our Customers</RouterLink>
     </section>
     <section class="app-footer__side">
-      <RouterLink to="/service">Our service</RouterLink>
+      <RouterLink to="/services">Our service</RouterLink>
     </section>
   </footer>
 </template>

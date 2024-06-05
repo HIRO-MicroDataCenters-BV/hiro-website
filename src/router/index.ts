@@ -37,7 +37,7 @@ const router = createRouter({
     {
       path: '/services',
       name: 'services',
-      component: () => import('../views/ServicesView.vue'),
+      component: () => import('../views/services-view'),
     },
     {
       path: '/playground',

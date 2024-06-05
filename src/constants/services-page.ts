@@ -1,6 +1,6 @@
 import { cubeParts } from '@/constants/cube-parts';
 
-const servicesCards = [
+export const servicesCards = [
   {
     title: 'Edge Cloud Services',
     description:
