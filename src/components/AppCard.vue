@@ -40,7 +40,7 @@ defineProps({
         {{ label }}
       </div>
       <component
-        :is="cubePartsIcons[cubeVariant as keyof typeof cubePartsIcons]"
+        :is="cubePartsIcons[cubeVariant]"
         v-if="cubeVariant"
       />
     </div>
