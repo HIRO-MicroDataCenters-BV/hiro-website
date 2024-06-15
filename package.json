@@ -16,6 +16,7 @@
   "dependencies": {
     "@tweenjs/tween.js": "^23.1.2",
     "@types/three": "^0.164.0",
+    "@vue-flow/core": "^1.36.0",
     "pinia": "^2.1.7",
     "three": "^0.164.1",
     "vue": "^3.4.21",
