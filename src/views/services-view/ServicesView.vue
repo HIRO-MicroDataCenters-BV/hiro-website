@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import { VueFlow } from '@vue-flow/core';
-
 import ServicesViewCards from './ServicesViewCards.vue';
+import AppFlowChart from '@/components/AppFlowChart.vue';
 </script>
 
 <template>
   <div class="services-view">
     <section class="services-view__graph-container">
-      <VueFlow />
+      <AppFlowChart />
     </section>
     <section class="services-view__card-container">
       <ServicesViewCards />
