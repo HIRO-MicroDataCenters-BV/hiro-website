@@ -1,12 +1,16 @@
 <script setup lang="ts">
 import ServicesViewCards from './ServicesViewCards.vue';
 import AppFlowChart from '@/components/AppFlowChart.vue';
+import { servicesGraph } from '@/constants/services-page';
 </script>
 
 <template>
   <div class="services-view">
     <section class="services-view__graph-container">
-      <AppFlowChart />
+      <AppFlowChart
+        :nodes="servicesGraph.nodes"
+        :edges="servicesGraph.edges"
+      />
     </section>
     <section class="services-view__card-container">
       <ServicesViewCards />

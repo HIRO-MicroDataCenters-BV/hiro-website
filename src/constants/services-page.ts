@@ -1,4 +1,5 @@
 import { cubeParts } from '@/constants/cube-parts';
+import type { Edge, Node } from '@vue-flow/core';
 
 export const servicesCards = [
   {
@@ -54,3 +55,48 @@ export const servicesCards = [
     type: cubeParts.governance,
   },
 ];
+
+export const servicesGraph = {
+  nodes: <Node[]>[
+    {
+      id: '1',
+      type: 'input',
+      position: { x: 5, y: 5 },
+      style: {
+        backgroundImage: 'url("src/assets/cubes/ecs.svg")',
+      },
+    },
+    {
+      id: '2',
+      position: { x: 100, y: 150 },
+    },
+    {
+      id: '3',
+      type: 'output',
+      position: { x: 400, y: 200 },
+    },
+  ],
+  edges: <Edge[]>[
+    {
+      id: 'e1->2',
+      source: '1',
+      target: '2',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e2->3',
+      source: '2',
+      target: '3',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e2->3',
+      source: '1',
+      target: '3',
+      animated: true,
+      type: 'straight',
+    },
+  ],
+};
