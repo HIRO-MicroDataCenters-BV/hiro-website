@@ -47,6 +47,7 @@ onBeforeUnmount(() => {
   background-size: cover;
   width: 50px;
   height: 57px;
+  z-index: 1 !important;
 }
 
 /* this contains the default theme, these are optional styles */

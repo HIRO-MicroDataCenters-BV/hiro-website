@@ -1,5 +1,5 @@
 import { cubeParts } from '@/constants/cube-parts';
-import type { Edge, Node } from '@vue-flow/core';
+import { type Edge, type Node, Position } from '@vue-flow/core';
 
 export const servicesCards = [
   {
@@ -60,7 +60,6 @@ export const servicesGraph = {
   nodes: <Node[]>[
     {
       id: '1',
-      type: 'input',
       position: { x: 5, y: 5 },
       style: {
         backgroundImage: 'url("src/assets/cubes/ecs.svg")',
@@ -68,12 +67,27 @@ export const servicesGraph = {
     },
     {
       id: '2',
-      position: { x: 100, y: 150 },
+      position: { x: 10, y: 150 },
     },
     {
       id: '3',
-      type: 'output',
-      position: { x: 400, y: 200 },
+      position: { x: 15, y: 300 },
+      sourcePosition: Position.Right,
+    },
+    {
+      id: '4',
+      position: { x: 150, y: 75 },
+      targetPosition: Position.Left,
+    },
+    {
+      id: '5',
+      position: { x: 150, y: 200 },
+      targetPosition: Position.Left,
+    },
+    {
+      id: '6',
+      position: { x: 250, y: 150 },
+      targetPosition: Position.Left,
     },
   ],
   edges: <Edge[]>[
@@ -92,9 +106,37 @@ export const servicesGraph = {
       type: 'straight',
     },
     {
-      id: 'e2->3',
+      id: 'e2->4',
+      source: '2',
+      target: '4',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e1->4',
       source: '1',
-      target: '3',
+      target: '4',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e3->5',
+      source: '3',
+      target: '5',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e4->6',
+      source: '4',
+      target: '6',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e5->6',
+      source: '5',
+      target: '6',
       animated: true,
       type: 'straight',
     },
