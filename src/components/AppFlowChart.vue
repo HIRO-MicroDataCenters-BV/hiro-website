@@ -50,5 +50,23 @@ onBeforeUnmount(() => {
   z-index: 1 !important;
 }
 
-/* this contains the default theme, these are optional styles */
+.vue-flow__node--ecs {
+  background-image: url('@/assets/cubes/ecs.svg');
+}
+
+.vue-flow__node--ecs-ds {
+  background-image: url('@/assets/cubes/ecs-ds.svg');
+}
+
+.vue-flow__node--ecs-ds-cog {
+  background-image: url('@/assets/cubes/ecs-ds-cog.svg');
+}
+
+.vue-flow__node--ecs-ds-cog-gov {
+  background-image: url('@/assets/cubes/ecs-ds-cog-gov.svg');
+}
+
+.vue-flow__node--ecs-gov {
+  background-image: url('@/assets/cubes/ecs-gov.svg');
+}
 </style>
