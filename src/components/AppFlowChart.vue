@@ -62,6 +62,10 @@ onBeforeUnmount(() => {
   background-image: url('@/assets/cubes/ecs-ds-cog.svg');
 }
 
+.vue-flow__node--ecs-ds-gov {
+  background-image: url('@/assets/cubes/ecs-ds-gov.svg');
+}
+
 .vue-flow__node--ecs-ds-cog-gov {
   background-image: url('@/assets/cubes/ecs-ds-cog-gov.svg');
 }

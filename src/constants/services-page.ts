@@ -61,33 +61,36 @@ export const servicesGraph = {
     {
       id: '1',
       position: { x: 5, y: 5 },
-      style: {
-        backgroundImage: 'url("src/assets/cubes/ecs.svg")',
-      },
+      class: 'vue-flow__node--ecs-ds',
     },
     {
       id: '2',
       position: { x: 10, y: 150 },
+      class: 'vue-flow__node--ecs-ds-cog-gov',
     },
     {
       id: '3',
       position: { x: 15, y: 300 },
       sourcePosition: Position.Right,
+      class: 'vue-flow__node--ecs',
     },
     {
       id: '4',
       position: { x: 150, y: 75 },
       targetPosition: Position.Left,
+      class: 'vue-flow__node--ecs-gov',
     },
     {
       id: '5',
       position: { x: 150, y: 200 },
       targetPosition: Position.Left,
+      class: 'vue-flow__node--ecs-ds-cog',
     },
     {
       id: '6',
       position: { x: 250, y: 150 },
       targetPosition: Position.Left,
+      class: 'vue-flow__node--ecs-ds-gov',
     },
   ],
   edges: <Edge[]>[
