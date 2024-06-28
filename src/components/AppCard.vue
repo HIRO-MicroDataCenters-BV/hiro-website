@@ -89,7 +89,7 @@ defineProps({
 }
 
 .app-card__label--edge-cloud-services {
-  background: var(--hiro-c-cube-green);
+  background: var(--hiro-c-cube-orange);
 }
 
 .app-card__label--governance {
