@@ -1,4 +1,5 @@
 import { cubeParts } from '@/constants/cube-parts';
+import { type Edge, type Node, Position } from '@vue-flow/core';
 
 export const agricultureCards = [
   {
@@ -47,3 +48,8 @@ export const agricultureCards = [
     type: cubeParts.edgeMicroDataCenters,
   },
 ];
+
+export const agricultureGraph = {
+  nodes: <Node[]>[],
+  edges: <Edge[]>[],
+};
