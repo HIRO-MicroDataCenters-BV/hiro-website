@@ -1,6 +1,7 @@
 import { cubeParts } from '@/constants/cube-parts';
+import type { Edge, Node } from '@vue-flow/core';
 
-const energyGridCards = [
+export const energyGridCards = [
   {
     title: 'Edge Cloud Services',
     description:
@@ -51,3 +52,8 @@ const energyGridCards = [
     type: cubeParts.cognitiveEngine,
   },
 ];
+
+export const energyGridGraph = {
+  nodes: <Node[]>[],
+  edges: <Edge[]>[],
+};

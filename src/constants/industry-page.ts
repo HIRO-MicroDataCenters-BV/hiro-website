@@ -1,6 +1,7 @@
 import { cubeParts } from '@/constants/cube-parts';
+import type { Edge, Node } from '@vue-flow/core';
 
-const industryCards = [
+export const industryCards = [
   {
     title: 'Edge Cloud Services',
     description:
@@ -48,3 +49,8 @@ const industryCards = [
     type: cubeParts.cognitiveEngine,
   },
 ];
+
+export const industryGraph = {
+  nodes: <Node[]>[],
+  edges: <Edge[]>[],
+};

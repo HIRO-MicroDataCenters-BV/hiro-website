@@ -1,4 +1,5 @@
 import { cubeParts } from '@/constants/cube-parts';
+import type { Edge, Node } from '@vue-flow/core';
 
 export const healthCards = [
   {
@@ -48,3 +49,8 @@ export const healthCards = [
     type: cubeParts.edgeMicroDataCenters,
   },
 ];
+
+export const healthGraph = {
+  nodes: <Node[]>[],
+  edges: <Edge[]>[],
+};

@@ -1,4 +1,5 @@
 import { cubeParts } from '@/constants/cube-parts';
+import type { Edge, Node } from '@vue-flow/core';
 
 export const cityCards = [
   {
@@ -50,3 +51,8 @@ export const cityCards = [
     type: cubeParts.edgeCloudServices,
   },
 ];
+
+export const cityGraph = {
+  nodes: <Node[]>[],
+  edges: <Edge[]>[],
+};

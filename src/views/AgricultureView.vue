@@ -8,7 +8,7 @@ import AppFlowChart from '@/components/AppFlowChart.vue';
 </script>
 
 <template>
-  <div class="playground_view">
+  <div class="agriculture-view">
     <section class="card-section">
       <AppCard
         v-for="(card, index) in agricultureCards.slice(0, 2)"
@@ -35,7 +35,7 @@ import AppFlowChart from '@/components/AppFlowChart.vue';
 </template>
 
 <style scoped>
-.playground_view {
+.agriculture-view {
   display: flex;
   gap: 20px;
   height: 100%;
