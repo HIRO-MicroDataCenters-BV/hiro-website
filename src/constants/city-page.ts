@@ -1,5 +1,6 @@
 import { cubeParts } from '@/constants/cube-parts';
 import type { Edge, Node } from '@vue-flow/core';
+import { Position } from '@vue-flow/core';
 
 export const cityCards = [
   {
@@ -53,6 +54,78 @@ export const cityCards = [
 ];
 
 export const cityGraph = {
-  nodes: <Node[]>[],
-  edges: <Edge[]>[],
+  nodes: <Node[]>[
+    {
+      id: '1',
+      position: { x: 5, y: 5 },
+      class: 'vue-flow__node--ecs-ds',
+    },
+    {
+      id: '2',
+      position: { x: 10, y: 150 },
+      class: 'vue-flow__node--ecs-ds-cog-gov',
+    },
+    {
+      id: '3',
+      position: { x: 15, y: 300 },
+      sourcePosition: Position.Right,
+      class: 'vue-flow__node--ecs',
+    },
+    {
+      id: '4',
+      position: { x: 150, y: 75 },
+      targetPosition: Position.Left,
+      class: 'vue-flow__node--ecs-gov',
+    },
+    {
+      id: '5',
+      position: { x: 150, y: 200 },
+      targetPosition: Position.Bottom,
+      class: 'vue-flow__node--ecs-ds-cog',
+    },
+  ],
+  edges: <Edge[]>[
+    {
+      id: 'e1->2',
+      source: '1',
+      target: '2',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e2->3',
+      source: '2',
+      target: '3',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e2->4',
+      source: '2',
+      target: '4',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e1->4',
+      source: '1',
+      target: '4',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e3->5',
+      source: '3',
+      target: '5',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e4->5',
+      source: '4',
+      target: '5',
+      animated: true,
+      type: 'straight',
+    },
+  ],
 };

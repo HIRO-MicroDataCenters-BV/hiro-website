@@ -1,5 +1,6 @@
 import { cubeParts } from '@/constants/cube-parts';
 import type { Edge, Node } from '@vue-flow/core';
+import { Position } from '@vue-flow/core';
 
 export const healthCards = [
   {
@@ -51,6 +52,59 @@ export const healthCards = [
 ];
 
 export const healthGraph = {
-  nodes: <Node[]>[],
-  edges: <Edge[]>[],
+  nodes: <Node[]>[
+    {
+      id: '1',
+      position: { x: 5, y: 5 },
+      class: 'vue-flow__node--ecs-ds',
+    },
+    {
+      id: '2',
+      position: { x: 50, y: 125 },
+      class: 'vue-flow__node--ecs-ds-cog-gov',
+    },
+    {
+      id: '3',
+      position: { x: 200, y: 100 },
+      sourcePosition: Position.Right,
+      targetPosition: Position.Bottom,
+      class: 'vue-flow__node--ecs',
+    },
+    {
+      id: '4',
+      position: { x: 150, y: 20 },
+      targetPosition: Position.Bottom,
+      class: 'vue-flow__node--ecs-gov',
+    },
+  ],
+  edges: <Edge[]>[
+    {
+      id: 'e1->2',
+      source: '1',
+      target: '2',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e2->3',
+      source: '2',
+      target: '3',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e2->4',
+      source: '2',
+      target: '4',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e1->4',
+      source: '1',
+      target: '4',
+      animated: true,
+      type: 'straight',
+    },
+  ],
 };
