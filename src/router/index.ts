@@ -39,11 +39,6 @@ const router = createRouter({
       name: 'services',
       component: () => import('../views/services-view'),
     },
-    {
-      path: '/playground',
-      name: 'playground',
-      component: () => import('../views/PlaygroundView.vue'),
-    },
   ],
 });
 

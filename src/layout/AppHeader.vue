@@ -21,8 +21,6 @@ const currentPathObject = computed(
           width="181"
         />
       </RouterLink>
-      <RouterLink to="/services">About</RouterLink>
-      <RouterLink to="/playground">Playground</RouterLink>
     </nav>
     <div class="app-header__heading">
       <h1 class="app-header__heading-text">
