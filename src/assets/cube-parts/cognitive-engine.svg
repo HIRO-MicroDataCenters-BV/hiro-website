@@ -1,0 +1,33 @@
+<svg width="43" height="31" viewBox="0 0 43 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="cognitive Engine">
+<g id="cognitive Engine_2">
+<g id="Vector 89">
+<path d="M21.2319 0L0 12.5818L21.1195 24.602L42.239 12.5818L21.2319 0Z" fill="url(#paint0_linear_380_5895)"/>
+<path d="M21.2319 0L0 12.5818L21.1195 24.602L42.239 12.5818L21.2319 0Z" fill="url(#paint1_linear_380_5895)" fill-opacity="0.2"/>
+</g>
+<path id="Vector 90" d="M0 18.648V12.5818L21.1195 24.6019V30.8929L0 18.648Z" fill="url(#paint2_linear_380_5895)"/>
+<path id="Vector 91" d="M42.2392 12.5818L21.1196 24.6019V31.0052L42.2392 19.0579V12.5818Z" fill="url(#paint3_linear_380_5895)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_380_5895" x1="18.0864" y1="2.02208" x2="28.0845" y2="20.6702" gradientUnits="userSpaceOnUse">
+<stop offset="0.775" stop-color="#0C68AA"/>
+<stop offset="1" stop-color="#2B8BD1"/>
+</linearGradient>
+<linearGradient id="paint1_linear_380_5895" x1="14.2669" y1="14.4916" x2="11.5708" y2="18.7604" gradientUnits="userSpaceOnUse">
+<stop offset="0.565" stop-color="#0C68AA"/>
+<stop offset="1" stop-color="#3083BF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_380_5895" x1="11.6831" y1="19.8838" x2="9.09937" y2="24.4896" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0C68AA"/>
+<stop offset="0.32" stop-color="#0583DE"/>
+<stop offset="0.77" stop-color="#1578BF"/>
+<stop offset="1" stop-color="#0C68AA"/>
+</linearGradient>
+<linearGradient id="paint3_linear_380_5895" x1="31.23" y1="18.5357" x2="34.1508" y2="23.8156" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2382C7"/>
+<stop offset="0.435" stop-color="#0C68AA"/>
+<stop offset="1" stop-color="#0C68AA"/>
+</linearGradient>
+</defs>
+</svg>

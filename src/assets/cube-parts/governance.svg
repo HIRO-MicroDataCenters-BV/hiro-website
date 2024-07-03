@@ -1,0 +1,33 @@
+<svg width="43" height="32" viewBox="0 0 43 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="GOVERNANCE">
+<g id="GOVERNANCE_2">
+<g id="Vector 89">
+<path d="M21.5129 0L0 12.7484L21.3991 24.9277L42.7982 12.7484L21.5129 0Z" fill="url(#paint0_linear_378_4737)"/>
+<path d="M21.5129 0L0 12.7484L21.3991 24.9277L42.7982 12.7484L21.5129 0Z" fill="url(#paint1_linear_378_4737)" fill-opacity="0.2"/>
+</g>
+<path id="Vector 90" d="M0 18.8948V12.7483L21.3991 24.9276V31.3018L0 18.8948Z" fill="url(#paint2_linear_378_4737)"/>
+<path id="Vector 91" d="M42.798 12.7483L21.3989 24.9276V31.4156L42.798 19.3101V12.7483Z" fill="url(#paint3_linear_378_4737)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_378_4737" x1="18.3258" y1="2.04885" x2="28.4563" y2="20.9438" gradientUnits="userSpaceOnUse">
+<stop offset="0.951044" stop-color="#EDD781"/>
+<stop offset="1" stop-color="#EDD997"/>
+</linearGradient>
+<linearGradient id="paint1_linear_378_4737" x1="14.4558" y1="14.6834" x2="11.724" y2="19.0088" gradientUnits="userSpaceOnUse">
+<stop offset="0.565" stop-color="#CD8E17"/>
+<stop offset="1" stop-color="#ECD681"/>
+</linearGradient>
+<linearGradient id="paint2_linear_378_4737" x1="11.8378" y1="20.1469" x2="9.21983" y2="24.8137" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EDD781"/>
+<stop offset="0.0001" stop-color="#ECD680"/>
+<stop offset="0.19" stop-color="#E7C86C"/>
+<stop offset="0.885" stop-color="#CD8E17"/>
+</linearGradient>
+<linearGradient id="paint3_linear_378_4737" x1="31.6432" y1="18.781" x2="34.6026" y2="24.1308" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E7C973"/>
+<stop offset="0.263929" stop-color="#E7C86C"/>
+<stop offset="1" stop-color="#CD8E17"/>
+</linearGradient>
+</defs>
+</svg>
