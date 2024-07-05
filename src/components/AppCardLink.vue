@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { routesCubesIcons } from '@/constants/cube-parts';
+
 defineProps({
   label: {
     type: String,
@@ -28,8 +30,14 @@ defineProps({
       class="app-card-link"
       :class="{ 'app-card-link--alternative-color': isAlternativeColor }"
     >
-      <div class="app-card-link__label">
-        {{ label }}
+      <div class="app-card-link__title">
+        <div class="app-card-link__label">
+          {{ label }}
+        </div>
+        <component
+          :is="routesCubesIcons[route]"
+          v-if="route"
+        />
       </div>
       <div class="app-card-link__body">
         {{ text }}
@@ -42,7 +50,7 @@ defineProps({
 .app-card-link {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
   position: relative;
   padding: 30px;
   width: 366px;
@@ -52,6 +60,12 @@ defineProps({
   cursor: pointer;
   text-decoration: none;
   color: var(--color-text);
+}
+
+.app-card-link__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .app-card-link__label {

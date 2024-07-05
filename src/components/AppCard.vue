@@ -20,7 +20,8 @@ defineProps({
     type: String,
     required: false,
     default: '',
-    validator: (value: string) => Object.values(cubeParts).includes(value),
+    validator: (value: string) =>
+      Object.values(cubeParts).includes(value) || value === '',
   },
 });
 </script>
