@@ -35,7 +35,7 @@ const currentPath = computed(() => router.currentRoute.value.path);
         {{ currentPathName }}
       </h1>
     </div>
-    <div style="flex: 1"></div>
+    <div class="app-header__heading-right"></div>
   </header>
 </template>
 
@@ -76,5 +76,9 @@ const currentPath = computed(() => router.currentRoute.value.path);
 .app-header__heading-cube {
   position: relative;
   top: 20px;
+}
+
+.app-header__heading-right {
+  flex: 1;
 }
 </style>
