@@ -36,7 +36,7 @@
 
 body {
   color: var(--color-text);
-  background: url('background.svg');
+  background: url('backgrounds/background-mobile.svg');
   background-size: cover;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
@@ -45,4 +45,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0 2rem;
+
+  @media only screen and (min-width: var(--breakpoint-tablet)) {
+    background: url('backgrounds/background-tablet.svg');
+  }
+
+  @media only screen and (min-width: var(--breakpoint-desktop)) {
+    background: url('backgrounds/background.svg');
+  }
 }

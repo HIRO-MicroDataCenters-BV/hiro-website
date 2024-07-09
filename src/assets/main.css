@@ -1,4 +1,5 @@
 @import './base.css';
+@import './breakpoints.css';
 
 #app {
   max-width: 1980px;
