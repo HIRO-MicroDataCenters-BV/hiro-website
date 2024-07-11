@@ -3,5 +3,6 @@
   --breakpoint-desktop: 1025px;
 }
 
-@custom-media --breakpoint-tablet only screen and (min-width: 768px);
+@custom-media --breakpoint-tablet only screen and (min-width: 481px);
+@custom-media --breakpoint-tablet-large only screen and (min-width: 769px);
 @custom-media --breakpoint-desktop only screen and (min-width: 1025px);

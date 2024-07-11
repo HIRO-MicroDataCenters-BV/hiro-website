@@ -43,7 +43,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
 
   /*
   @media (--breakpoint-tablet) {
@@ -53,5 +53,6 @@ body {
 
   @media (--breakpoint-desktop) {
     background: url('backgrounds/background.svg');
+    padding: 0 2rem;
   }
 }
