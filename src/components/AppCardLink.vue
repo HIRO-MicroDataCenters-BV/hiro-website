@@ -34,9 +34,9 @@ defineProps({
         <div class="app-card-link__label">
           {{ label }}
         </div>
-        <component
-          :is="routesCubesIcons[route]"
-          v-if="route"
+        <img
+          :src="routesCubesIcons[route]"
+          alt="icon"
         />
       </div>
       <div class="app-card-link__body">

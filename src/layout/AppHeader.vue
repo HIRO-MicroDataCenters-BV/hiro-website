@@ -26,9 +26,10 @@ const currentPath = computed(() => router.currentRoute.value.path);
       </RouterLink>
     </nav>
     <div class="app-header__heading">
-      <component
-        :is="routesCubesIcons[currentPath]"
+      <img
         v-if="currentPath"
+        :src="routesCubesIcons[currentPath]"
+        :alt="currentPath"
         class="app-header__heading-cube"
       />
       <h1 class="app-header__heading-text">

@@ -63,10 +63,13 @@ const { industry, energyGrid, city, agriculture, health } = customerCards;
 }
 
 .customers-view__upper-section {
+  visibility: hidden;
+
   @media (--breakpoint-tablet-large) {
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    visibility: visible;
   }
 
   @media (--breakpoint-desktop) {
@@ -75,10 +78,13 @@ const { industry, energyGrid, city, agriculture, health } = customerCards;
 }
 
 .customers-view__lower-section {
+  visibility: hidden;
+
   @media (--breakpoint-tablet-large) {
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    visibility: visible;
   }
 
   @media (--breakpoint-desktop) {
