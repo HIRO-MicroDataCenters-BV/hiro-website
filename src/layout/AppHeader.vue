@@ -27,7 +27,7 @@ const currentPath = computed(() => router.currentRoute.value.path);
     </nav>
     <div class="app-header__heading">
       <img
-        v-if="currentPath"
+        v-if="routesCubesIcons[currentPath]"
         :src="routesCubesIcons[currentPath]"
         :alt="currentPath"
         class="app-header__heading-cube"
