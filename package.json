@@ -15,9 +15,9 @@
   },
   "dependencies": {
     "@vue-flow/core": "^1.36.0",
-    "swiper": "^11.1.4",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vue3-carousel": "^0.3.3"
   },
   "devDependencies": {
     "@csstools/postcss-global-data": "^2.1.1",

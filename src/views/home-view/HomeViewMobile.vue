@@ -2,41 +2,33 @@
 import AppCardLink from '@/components/AppCardLink.vue';
 import { customerCards, joinUsCard } from '@/constants/home-page';
 import AppCard from '@/components/AppCard.vue';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-
-const spaceBetween = 10;
-const onProgress = (e: any) => {
-  const [swiper, progress] = e.detail;
-  console.log(progress);
-};
-
-const onSlideChange = () => {
-  console.log('slide changed');
-};
+import 'vue3-carousel/dist/carousel.css';
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
 </script>
 
 <template>
   <div class="home-view-mobile">
-    <swiper
-      :slides-per-view="1"
-      :space-between="50"
+    <Carousel
       class="home-view-mobile__swiper"
-      @swiperprogress="onProgress"
-      @swiperslidechange="onSlideChange"
+      :items-to-show="1"
+      :items-to-scroll="1"
     >
-      <swiper-slide
+      <slide
         v-for="(value, index) in Object.values(customerCards)"
         :key="index + value.title"
-        class="home-view-mobile__swiper-slide"
       >
         <AppCardLink
+          class="home-view-mobile__swiper-slide"
           :label="value.title"
           :text="value.description"
           :route="value.route"
         />
-      </swiper-slide>
-    </swiper>
+      </slide>
+      <template #addons>
+        <navigation />
+        <pagination />
+      </template>
+    </Carousel>
     <AppCard
       :label="joinUsCard.title"
       :text="joinUsCard.description"
@@ -58,7 +50,7 @@ const onSlideChange = () => {
 }
 
 .home-view-mobile__swiper {
-  max-width: 366px;
+  max-width: 450px;
 
   @media (--breakpoint-tablet-large) {
     display: none;

@@ -53,6 +53,7 @@ body {
 
   @media (--breakpoint-desktop) {
     background: url('backgrounds/background.svg');
+    background-size: cover;
     padding: 0 2rem;
   }
 }

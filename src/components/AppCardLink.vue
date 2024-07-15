@@ -74,4 +74,8 @@ defineProps({
   padding: 0 10px;
   font-weight: 600;
 }
+
+.app-card-link__body {
+  text-align: left;
+}
 </style>
