@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 
 const spaceBetween = 10;
-const onProgress = (e) => {
+const onProgress = (e: any) => {
   const [swiper, progress] = e.detail;
   console.log(progress);
 };
