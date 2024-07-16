@@ -35,10 +35,6 @@ const hideContactSection = () => {
               info@hiro-microdatacenters.nl
             </a>
           </p>
-          <p>
-            Phone number:
-            <a href="tel:0612345678">0612345678</a>
-          </p>
         </address>
         <IconCross
           class="app-footer__contact-exit"
@@ -55,8 +51,10 @@ const hideContactSection = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 5px 50px;
   height: 80px;
+  flex-wrap: wrap;
+  padding-top: 3rem;
 }
 
 .app-footer__side {
