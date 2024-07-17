@@ -12,10 +12,6 @@ defineProps({
     required: false,
     default: '',
   },
-  isAlternativeColor: {
-    type: Boolean,
-    default: false,
-  },
   cubeVariant: {
     type: String,
     required: false,
@@ -38,7 +34,6 @@ defineProps({
   <div
     class="app-card"
     :class="{
-      'app-card--alternative-color': isAlternativeColor,
       'app-card--is-dense': isDense,
     }"
   >
@@ -75,16 +70,23 @@ defineProps({
   position: relative;
   padding: 30px;
   width: 342px;
-  height: 190px;
-  background: url('card-border.svg');
-  background-size: cover;
-
-  &.app-card--alternative-color {
-    background: url('card-border-alt.svg');
-  }
+  min-height: 250px;
 
   &.app-card--is-dense {
-    padding: 16px;
+    padding: 20px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    border: 3px solid transparent;
+    background: linear-gradient(180deg, #e0e0e0 0%, transparent 95%) border-box;
+    mask:
+      linear-gradient(#fff 0%, #fff 0%) padding-box,
+      linear-gradient(#fff 0%, #fff 0%);
+    mask-composite: exclude;
   }
 }
 
