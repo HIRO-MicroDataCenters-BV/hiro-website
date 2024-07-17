@@ -23,15 +23,31 @@ defineProps({
     validator: (value: string) =>
       Object.values(cubeParts).includes(value) || value === '',
   },
+  noPicture: {
+    type: Boolean,
+    default: false,
+  },
+  isDense: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 
 <template>
   <div
     class="app-card"
-    :class="{ 'app-card--alternative-color': isAlternativeColor }"
+    :class="{
+      'app-card--alternative-color': isAlternativeColor,
+      'app-card--is-dense': isDense,
+    }"
   >
-    <div class="app-card__label-container">
+    <div
+      class="app-card__label-container"
+      :class="{
+        'app-card__label-container--no-cube': !cubeVariant,
+      }"
+    >
       <div
         class="app-card__label"
         :class="{
@@ -42,7 +58,7 @@ defineProps({
       </div>
       <component
         :is="cubePartsIcons[cubeVariant]"
-        v-if="cubeVariant"
+        v-if="cubeVariant && !noPicture"
       />
     </div>
     <div class="app-card__body">
@@ -66,12 +82,20 @@ defineProps({
   &.app-card--alternative-color {
     background: url('card-border-alt.svg');
   }
+
+  &.app-card--is-dense {
+    padding: 16px;
+  }
 }
 
 .app-card__label-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.app-card__label-container--no-cube {
+  justify-content: center;
 }
 
 .app-card__label {
