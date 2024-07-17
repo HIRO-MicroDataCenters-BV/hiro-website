@@ -34,6 +34,7 @@ const { industry, energyGrid, city, agriculture, health } = customerCards;
       <AppCard
         :label="joinUsCard.title"
         :text="joinUsCard.description"
+        :is-dense="true"
       />
       <AppCardLink
         :label="health.title"
@@ -82,7 +83,7 @@ const { industry, energyGrid, city, agriculture, health } = customerCards;
 
   @media (--breakpoint-tablet-large) {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     flex-direction: column;
     visibility: visible;
   }

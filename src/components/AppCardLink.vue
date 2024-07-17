@@ -37,11 +37,13 @@ defineProps({
         <img
           :src="routesCubesIcons[route]"
           alt="icon"
+          class="app-card-link__icon"
         />
       </div>
       <div class="app-card-link__body">
         {{ text }}
       </div>
+      <div class="app-card-link__footer">See more</div>
     </div>
   </RouterLink>
 </template>
@@ -52,7 +54,7 @@ defineProps({
   flex-direction: column;
   gap: 5px;
   position: relative;
-  padding: 30px;
+  padding: 20px;
   width: 366px;
   height: 250px;
   background: #000;
@@ -60,6 +62,10 @@ defineProps({
   cursor: pointer;
   text-decoration: none;
   color: var(--color-text);
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .app-card-link__title {
@@ -75,7 +81,22 @@ defineProps({
   font-weight: 600;
 }
 
+.app-card-link__icon {
+  width: 50px;
+  height: 50px;
+}
+
 .app-card-link__body {
   text-align: left;
+}
+
+.app-card-link__footer {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
 }
 </style>

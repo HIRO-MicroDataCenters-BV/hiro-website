@@ -3,7 +3,7 @@ import AppCardLink from '@/components/AppCardLink.vue';
 import { customerCards, joinUsCard } from '@/constants/home-page';
 import AppCard from '@/components/AppCard.vue';
 import 'vue3-carousel/dist/carousel.css';
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+import { Carousel, Slide, Pagination } from 'vue3-carousel';
 </script>
 
 <template>
@@ -25,7 +25,6 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
         />
       </slide>
       <template #addons>
-        <navigation />
         <pagination />
       </template>
     </Carousel>
@@ -50,7 +49,7 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
 }
 
 .home-view-mobile__swiper {
-  max-width: 450px;
+  max-width: 350px;
 
   @media (--breakpoint-tablet-large) {
     display: none;
