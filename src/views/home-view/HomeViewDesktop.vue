@@ -89,6 +89,7 @@ const { industry, energyGrid, city, agriculture, health } = customerCards;
   }
 
   @media (--breakpoint-desktop) {
+    gap: 1rem;
     flex-direction: row;
   }
 }
