@@ -106,8 +106,21 @@ const activate = () => {
 
 .services-view-cards__card-description {
   padding: 16px;
-  background: url('services-card-border.svg');
   background-size: cover;
   min-height: 150px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    border: 3px solid transparent;
+    background: linear-gradient(180deg, #e0e0e0 0%, transparent 95%) border-box;
+    mask:
+      linear-gradient(#fff 0%, #fff 0%) padding-box,
+      linear-gradient(#fff 0%, #fff 0%);
+    mask-composite: exclude;
+  }
 }
 </style>

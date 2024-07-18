@@ -25,12 +25,18 @@ import { servicesGraph } from '@/constants/services-page';
   padding: 20px;
   justify-content: center;
   max-width: 1200px;
+  height: 100%;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .services-view__graph-container {
   display: flex;
   flex: 1;
+  min-height: 400px;
 }
 
 .services-view__card-container {
