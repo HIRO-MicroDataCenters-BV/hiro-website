@@ -72,7 +72,7 @@ import AppCardSelector from '@/components/AppCardSelector.vue';
 
 .energy-grid-view__card-selector {
   @media (--breakpoint-desktop) {
-    display: block;
+    display: none;
   }
 }
 </style>

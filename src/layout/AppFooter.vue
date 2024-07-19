@@ -52,7 +52,6 @@ const hideContactSection = () => {
   align-items: center;
   justify-content: center;
   gap: 5px 50px;
-  height: 80px;
   flex-wrap: wrap;
   padding-top: 3rem;
 }
