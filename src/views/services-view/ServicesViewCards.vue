@@ -22,7 +22,6 @@ const activeCard = ref('');
 .services-view-cards {
   display: flex;
   gap: 50px;
-  padding: 20px;
   justify-content: center;
   flex-direction: column;
   flex: 1;

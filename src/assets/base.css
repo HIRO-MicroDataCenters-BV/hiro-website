@@ -45,15 +45,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding: 0 0.5rem;
 
-  /*
   @media (--breakpoint-tablet) {
-    background: url('backgrounds/background-tablet.svg');
+    padding: 0 1rem;
   }
-*/
 
   @media (--breakpoint-desktop) {
     background: url('backgrounds/background.svg');
     background-size: cover;
-    padding: 0 2rem;
   }
 }

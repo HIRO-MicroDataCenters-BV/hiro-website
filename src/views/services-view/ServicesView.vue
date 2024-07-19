@@ -22,7 +22,7 @@ import { servicesGraph } from '@/constants/services-page';
 .services-view {
   display: flex;
   gap: 20px;
-  padding: 20px;
+  padding: 0 1rem;
   justify-content: center;
   max-width: 1200px;
   height: 100%;

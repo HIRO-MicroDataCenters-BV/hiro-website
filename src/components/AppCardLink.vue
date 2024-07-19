@@ -55,16 +55,18 @@ defineProps({
   gap: 5px;
   position: relative;
   padding: 20px;
-  width: 366px;
+  max-width: 366px;
   height: 250px;
   background: #000;
-  box-shadow: -1px 1px 16px 3px rgba(255, 255, 255, 0.25);
   cursor: pointer;
   text-decoration: none;
   color: var(--color-text);
 
-  &:hover {
-    transform: scale(1.05);
+  @media (--breakpoint-tablet-large) {
+    box-shadow: -1px 1px 16px 3px rgba(255, 255, 255, 0.25);
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
@@ -98,5 +100,6 @@ defineProps({
   font-weight: 400;
   line-height: normal;
   text-decoration-line: underline;
+  margin-top: auto;
 }
 </style>

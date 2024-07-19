@@ -29,8 +29,10 @@ import { Carousel, Slide, Pagination } from 'vue3-carousel';
       </template>
     </Carousel>
     <AppCard
+      class="home-view-mobile__join-us-card"
       :label="joinUsCard.title"
       :text="joinUsCard.description"
+      :is-dense="true"
     />
   </div>
 </template>
@@ -49,17 +51,31 @@ import { Carousel, Slide, Pagination } from 'vue3-carousel';
 }
 
 .home-view-mobile__swiper {
-  max-width: 350px;
+  max-width: 366px;
+}
 
-  @media (--breakpoint-tablet-large) {
-    display: none;
+.home-view-mobile__join-us-card {
+  max-width: 366px;
+}
+</style>
+
+<style>
+.carousel__viewport {
+  box-shadow: -1px 1px 16px 3px rgba(255, 255, 255, 0.25);
+}
+
+.carousel__pagination-button {
+  &:after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: var(--color-text);
+    border-radius: 50%;
   }
 }
 
-.home-view-mobile__swiper-slide {
-  @media (--breakpoint-tablet-large) {
-    display: none;
-    visibility: hidden;
-  }
+.carousel__pagination-button--active:after {
+  background: var(--hiro-c-green);
 }
 </style>

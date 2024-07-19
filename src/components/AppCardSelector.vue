@@ -57,6 +57,7 @@ const selectedCard = ref(props.cards[0]);
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid var(--hiro-c-dark-gray);
+  gap: 20px;
 }
 
 .app-card-selector__menu-item {
@@ -65,6 +66,8 @@ const selectedCard = ref(props.cards[0]);
   height: 60px;
   position: relative;
   top: 3px;
+  width: 100%;
+  cursor: pointer;
 }
 
 .app-card-selector__menu-item--active {

@@ -35,6 +35,7 @@ const { industry, energyGrid, city, agriculture, health } = customerCards;
         :label="joinUsCard.title"
         :text="joinUsCard.description"
         :is-dense="true"
+        class="customers-view-desktop__join-us-card"
       />
       <AppCardLink
         :label="health.title"
@@ -91,6 +92,15 @@ const { industry, energyGrid, city, agriculture, health } = customerCards;
   @media (--breakpoint-desktop) {
     gap: 1rem;
     flex-direction: row;
+  }
+}
+
+.customers-view-desktop__join-us-card {
+  max-width: 366px;
+  height: 250px;
+
+  @media (--breakpoint-desktop) {
+    max-width: 350px;
   }
 }
 </style>

@@ -69,7 +69,8 @@ defineProps({
   gap: 10px;
   position: relative;
   padding: 30px;
-  width: 342px;
+  min-width: 350px;
+  max-width: 550px;
   min-height: 250px;
 
   &.app-card--is-dense {
