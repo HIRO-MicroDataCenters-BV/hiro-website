@@ -21,5 +21,16 @@ import HomeViewDesktop from './HomeViewDesktop.vue';
   text-align: center;
   margin: 0 auto;
   padding: 1rem 0;
+
+  @media (--breakpoint-tablet-large) {
+    max-width: 450px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  @media (--breakpoint-desktop) {
+    max-width: 550px;
+  }
 }
 </style>
