@@ -51,21 +51,60 @@ const hideContactSection = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px 50px;
+  gap: 0 50px;
   flex-wrap: wrap;
   padding-top: 3rem;
+  padding-bottom: 1rem;
+  height: calc(100px + 4rem);
+
+  @media (--breakpoint-tablet-large) {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100px;
+  }
 }
 
 .app-footer__side {
-  background: url('assets/footer-bg-side.svg') bottom no-repeat;
+  background: url('assets/footer-bg-link-mobile.svg') bottom no-repeat;
   width: 145px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 300ms ease-out;
+
+  button {
+    font-size: 0.875rem;
+  }
 
   a {
     color: var(--color-text);
+    width: 100%;
+    text-align: center;
+  }
+
+  &:has(a.router-link-exact-active) {
+    font-weight: 900;
+    transform: initial !important;
+  }
+
+  .router-link-exact-active {
+    font-weight: 900;
+    transform: initial !important;
+  }
+
+  &:hover {
+    transform: translateY(-5px) scale(1.1);
+  }
+
+  @media (--breakpoint-desktop) {
+    background: url('assets/footer-bg-link.svg') bottom no-repeat;
+    width: 200px;
+    font-size: 0.9375rem;
+
+    button {
+      font-size: 0.9375rem;
+    }
   }
 }
 
@@ -79,12 +118,15 @@ const hideContactSection = () => {
 }
 
 .app-footer__contact-section {
-  background: url('assets/footer-full-bg.svg') top no-repeat;
-  width: 700px;
-  height: 80px;
+  background: url('assets/footer-full-bg-mobile.svg') top no-repeat;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (--breakpoint-desktop) {
+    background: url('assets/footer-full-bg.svg') top no-repeat;
+    width: 700px;
+  }
 }
 
 .app-footer__contact-section-placeholder {
@@ -106,7 +148,7 @@ const hideContactSection = () => {
   }
 
   p {
-    font-weight: 600;
+    font-weight: 900;
   }
 
   a {
