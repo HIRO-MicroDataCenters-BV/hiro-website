@@ -12,6 +12,16 @@ entries:
     - https://HIRO-MicroDataCenters-BV.github.io/hiro-website/helm-charts/app-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
+    appVersion: 0.1.2-dev.1.feature-media-qu.409c9594
+    created: "2024-07-22T17:08:32.98990574Z"
+    description: A frontend web service template for reuse.
+    digest: 6b24f25d8b99a1f9b1f4c5f8184f704a3252f263830d306b45e86fc3f7239e68
+    name: app
+    type: application
+    urls:
+    - https://HIRO-MicroDataCenters-BV.github.io/hiro-website/helm-charts/app-0.1.2-dev.1.feature-media-qu.409c9594.tgz
+    version: 0.1.2-dev.1.feature-media-qu.409c9594
+  - apiVersion: v2
     appVersion: 0.1.1
     created: "2024-07-09T15:21:00.169216896Z"
     description: A frontend web service template for reuse.
@@ -711,4 +721,4 @@ entries:
     urls:
     - https://HIRO-MicroDataCenters-BV.github.io/hiro-website/helm-charts/app-0.1.0-dev.0.feature-pre-comm.02da66e2.tgz
     version: 0.1.0-dev.0.feature-pre-comm.02da66e2
-generated: "2024-07-22T17:06:16.796055206Z"
+generated: "2024-07-22T17:08:32.988878786Z"
