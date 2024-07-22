@@ -64,6 +64,7 @@ defineProps({
 
   @media (--breakpoint-tablet-large) {
     box-shadow: -1px 1px 16px 3px rgba(255, 255, 255, 0.25);
+    transition: transform 300ms ease-out;
     &:hover {
       transform: scale(1.05);
     }
