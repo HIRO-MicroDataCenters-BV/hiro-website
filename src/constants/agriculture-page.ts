@@ -47,7 +47,7 @@ export const agricultureCards = [
       'IT knowledge is needed to maintain the infrastructure.',
     type: cubeParts.edgeMicroDataCenters,
   },
-];
+] as const;
 
 export const agricultureGraph = {
   nodes: <Node[]>[
@@ -104,4 +104,4 @@ export const agricultureGraph = {
       type: 'straight',
     },
   ],
-};
+} as const;

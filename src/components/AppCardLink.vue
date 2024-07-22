@@ -35,7 +35,7 @@ defineProps({
           {{ label }}
         </div>
         <img
-          :src="routesCubesIcons[route]"
+          :src="routesCubesIcons[route as keyof typeof routesCubesIcons]"
           alt="icon"
           class="app-card-link__icon"
         />

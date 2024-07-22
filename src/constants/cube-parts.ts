@@ -34,7 +34,7 @@ export const cubePartsIcons = {
   [cubeParts.edgeCloudServices]: EdgeCloudServicesIcon,
   [cubeParts.governance]: GovernanceIcon,
   [cubeParts.edgeMicroDataCenters]: EdgeMicroDataCentersIcon,
-};
+} as const;
 
 export const cubePartsLinks = {
   [cubeParts.cognitiveEngine]: CognitiveEngineLink,
@@ -42,7 +42,7 @@ export const cubePartsLinks = {
   [cubeParts.edgeCloudServices]: EdgeCloudServicesLink,
   [cubeParts.governance]: GovernanceLink,
   [cubeParts.edgeMicroDataCenters]: EdgeMicroDataCentersLink,
-};
+} as const;
 
 export const routesCubesIcons = {
   [agriculture.route]: AgricultureIcon,
@@ -50,4 +50,4 @@ export const routesCubesIcons = {
   [health.route]: HealthIcon,
   [industry.route]: IndustryIcon,
   [energyGrid.route]: EnergyGridIcon,
-};
+} as const;

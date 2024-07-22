@@ -54,7 +54,7 @@ export const servicesCards = [
       'can be benchmarked against their competitors.',
     type: cubeParts.governance,
   },
-];
+] as const;
 
 export const servicesGraph = {
   nodes: <Node[]>[
@@ -144,4 +144,4 @@ export const servicesGraph = {
       type: 'straight',
     },
   ],
-};
+} as const;

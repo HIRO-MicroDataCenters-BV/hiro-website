@@ -52,7 +52,7 @@ export const energyGridCards = [
       'applications relying on multiple models.',
     type: cubeParts.cognitiveEngine,
   },
-];
+] as const;
 
 export const energyGridGraph = {
   nodes: <Node[]>[

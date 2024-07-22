@@ -49,7 +49,7 @@ export const industryCards = [
       'applications relying on multiple models.',
     type: cubeParts.cognitiveEngine,
   },
-];
+] as const;
 
 export const industryGraph = {
   nodes: <Node[]>[
@@ -120,4 +120,4 @@ export const industryGraph = {
       type: 'straight',
     },
   ],
-};
+} as const;

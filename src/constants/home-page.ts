@@ -1,3 +1,5 @@
+import { ROUTES } from '@/router/routes';
+
 export const customerCards = {
   industry: {
     title: 'Industry 4.0',
@@ -8,7 +10,7 @@ export const customerCards = {
       'Real time decision making through local edge-cloud computing enables ' +
       'enhanced efficiency and productivity, ' +
       'quality control, safety and supply chain optimization.',
-    route: '/industry',
+    route: ROUTES.INDUSTRY.path,
   },
   energyGrid: {
     title: 'Energy Grid 3.0',
@@ -19,7 +21,7 @@ export const customerCards = {
       'energy storage systems and hydrogen will allow local communities ' +
       'and even individual households to produce and store their own energy, ' +
       'contributing excess power back to the grid.',
-    route: '/energy-grid',
+    route: ROUTES.ENERGY_GRID.path,
   },
   city: {
     title: 'City 2.0',
@@ -30,7 +32,7 @@ export const customerCards = {
       'life in our future cities. Privacy preserving sensing and ' +
       'data processing will support inclusivity and community ' +
       'engagement for creating and maintaining sustainable cities.',
-    route: '/city',
+    route: ROUTES.CITY.path,
   },
   agriculture: {
     title: 'Agriculture 3.0',
@@ -41,7 +43,7 @@ export const customerCards = {
       'This becomes possible through data driven advisory ' +
       'in farming and integrated value chains connecting ' +
       'farmers directly to consumers,',
-    route: '/agriculture',
+    route: ROUTES.AGRICULTURE.path,
   },
   health: {
     title: 'Health 3.0',
@@ -51,9 +53,9 @@ export const customerCards = {
       'reactive treatments. Processing locally large volumes of ' +
       'privacy sensitive data and AI are key for providing personalised care, ' +
       'fine grained and real time monitoring and treatment of chronic diseases.',
-    route: '/health',
+    route: ROUTES.HEALTH.path,
   },
-};
+} as const;
 
 export const joinUsCard = {
   title: 'Join Us!',
@@ -65,4 +67,4 @@ export const joinUsCard = {
     'Discover how Powerful Edge as a Service (PEaaS) ' +
     'delivers you digital sovereignty that can amplify ' +
     'your operational efficiency and streamline supply chains.',
-};
+} as const;
