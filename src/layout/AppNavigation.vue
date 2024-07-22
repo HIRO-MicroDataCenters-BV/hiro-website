@@ -63,7 +63,7 @@ const navigateToPrevious = () => {
 <style scoped>
 .app-navigation {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   gap: 30px;
   padding: 1rem 0;
 }
