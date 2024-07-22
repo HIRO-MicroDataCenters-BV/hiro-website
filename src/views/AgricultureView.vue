@@ -65,11 +65,11 @@ import AppCardSelector from '@/components/AppCardSelector.vue';
   @media (--breakpoint-desktop) {
     display: flex;
     flex-direction: column;
-    gap: 100px;
     width: fit-content;
     height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 768px;
   }
 }
 
