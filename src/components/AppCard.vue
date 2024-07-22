@@ -88,6 +88,7 @@ defineProps({
       linear-gradient(#fff 0%, #fff 0%) padding-box,
       linear-gradient(#fff 0%, #fff 0%);
     mask-composite: exclude;
+    z-index: -1;
   }
 }
 
