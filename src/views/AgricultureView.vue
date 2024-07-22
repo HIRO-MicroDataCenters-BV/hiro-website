@@ -69,7 +69,7 @@ import AppCardSelector from '@/components/AppCardSelector.vue';
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    max-width: 768px;
+    max-height: 600px;
   }
 }
 
