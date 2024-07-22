@@ -7,7 +7,7 @@ const { industry, energyGrid, city, agriculture, health } = customerCards;
 </script>
 
 <template>
-  <main class="customers-view">
+  <div class="customers-view-desktop">
     <section class="customers-view__upper-section">
       <AppCardLink
         :label="industry.title"
@@ -34,6 +34,8 @@ const { industry, energyGrid, city, agriculture, health } = customerCards;
       <AppCard
         :label="joinUsCard.title"
         :text="joinUsCard.description"
+        :is-dense="true"
+        class="customers-view-desktop__join-us-card"
       />
       <AppCardLink
         :label="health.title"
@@ -41,25 +43,64 @@ const { industry, energyGrid, city, agriculture, health } = customerCards;
         :route="health.route"
       />
     </section>
-  </main>
+  </div>
 </template>
 
 <style scoped>
-.customers-view {
-  display: flex;
-  gap: 3rem;
-  padding: 1rem;
-  flex-direction: column;
-  align-items: center;
+.customers-view-desktop {
+  display: none;
+
+  @media (--breakpoint-tablet-large) {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (--breakpoint-desktop) {
+    flex-direction: column;
+  }
 }
 
 .customers-view__upper-section {
-  display: flex;
-  gap: 1rem;
+  visibility: hidden;
+
+  @media (--breakpoint-tablet-large) {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    visibility: visible;
+  }
+
+  @media (--breakpoint-desktop) {
+    flex-direction: row;
+  }
 }
 
 .customers-view__lower-section {
-  display: flex;
-  gap: 1rem;
+  visibility: hidden;
+
+  @media (--breakpoint-tablet-large) {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    visibility: visible;
+  }
+
+  @media (--breakpoint-desktop) {
+    gap: 1rem;
+    flex-direction: row;
+  }
+}
+
+.customers-view-desktop__join-us-card {
+  max-width: 366px;
+  height: 250px;
+
+  @media (--breakpoint-desktop) {
+    max-width: 350px;
+  }
 }
 </style>

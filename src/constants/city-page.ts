@@ -51,7 +51,7 @@ export const cityCards = [
       'data sovereignty, AI transparency, etc.',
     type: cubeParts.edgeCloudServices,
   },
-];
+] as const;
 
 export const cityGraph = {
   nodes: <Node[]>[
@@ -128,4 +128,4 @@ export const cityGraph = {
       type: 'straight',
     },
   ],
-};
+} as const;

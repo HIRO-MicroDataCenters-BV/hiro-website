@@ -49,7 +49,7 @@ export const healthCards = [
       'AI inferencing and will carry some of the latest XPU’s including Risc-V.',
     type: cubeParts.edgeMicroDataCenters,
   },
-];
+] as const;
 
 export const healthGraph = {
   nodes: <Node[]>[
@@ -107,4 +107,4 @@ export const healthGraph = {
       type: 'straight',
     },
   ],
-};
+} as const;

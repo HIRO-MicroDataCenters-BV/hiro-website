@@ -12,10 +12,6 @@ defineProps({
     required: false,
     default: '',
   },
-  isAlternativeColor: {
-    type: Boolean,
-    default: false,
-  },
   cubeVariant: {
     type: String,
     required: false,
@@ -23,15 +19,30 @@ defineProps({
     validator: (value: string) =>
       Object.values(cubeParts).includes(value) || value === '',
   },
+  noPicture: {
+    type: Boolean,
+    default: false,
+  },
+  isDense: {
+    type: Boolean,
+    default: false,
+  },
 });
 </script>
 
 <template>
   <div
     class="app-card"
-    :class="{ 'app-card--alternative-color': isAlternativeColor }"
+    :class="{
+      'app-card--is-dense': isDense,
+    }"
   >
-    <div class="app-card__label-container">
+    <div
+      class="app-card__label-container"
+      :class="{
+        'app-card__label-container--no-cube': !cubeVariant,
+      }"
+    >
       <div
         class="app-card__label"
         :class="{
@@ -42,7 +53,7 @@ defineProps({
       </div>
       <component
         :is="cubePartsIcons[cubeVariant]"
-        v-if="cubeVariant"
+        v-if="cubeVariant && !noPicture"
       />
     </div>
     <div class="app-card__body">
@@ -58,13 +69,26 @@ defineProps({
   gap: 10px;
   position: relative;
   padding: 30px;
-  width: 342px;
-  height: 190px;
-  background: url('card-border.svg');
-  background-size: cover;
+  min-width: 350px;
+  max-width: 550px;
+  min-height: 250px;
 
-  &.app-card--alternative-color {
-    background: url('card-border-alt.svg');
+  &.app-card--is-dense {
+    padding: 20px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    border: 3px solid transparent;
+    background: linear-gradient(180deg, #e0e0e0 0%, transparent 95%) border-box;
+    mask:
+      linear-gradient(#fff 0%, #fff 0%) padding-box,
+      linear-gradient(#fff 0%, #fff 0%);
+    mask-composite: exclude;
+    z-index: -1;
   }
 }
 
@@ -72,6 +96,10 @@ defineProps({
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.app-card__label-container--no-cube {
+  justify-content: center;
 }
 
 .app-card__label {

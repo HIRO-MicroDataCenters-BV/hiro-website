@@ -2,6 +2,7 @@
 import AppCard from '@/components/AppCard.vue';
 import { cityCards, cityGraph } from '@/constants/city-page';
 import AppFlowChart from '@/components/AppFlowChart.vue';
+import AppCardSelector from '@/components/AppCardSelector.vue';
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import AppFlowChart from '@/components/AppFlowChart.vue';
     <AppFlowChart
       :nodes="cityGraph.nodes"
       :edges="cityGraph.edges"
+      class="city-view__flow-chart"
     />
     <section class="card-section">
       <AppCard
@@ -28,6 +30,10 @@ import AppFlowChart from '@/components/AppFlowChart.vue';
         :cube-variant="card.type"
       />
     </section>
+    <AppCardSelector
+      class="city-view__card-selector"
+      :cards="cityCards"
+    />
   </div>
 </template>
 
@@ -38,15 +44,35 @@ import AppFlowChart from '@/components/AppFlowChart.vue';
   height: 100%;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+
+  @media (--breakpoint-desktop) {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.city-view__flow-chart {
+  min-height: 400px;
 }
 
 .card-section {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  width: fit-content;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+  display: none;
+
+  @media (--breakpoint-desktop) {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 600px;
+  }
+}
+
+.city-view__card-selector {
+  @media (--breakpoint-desktop) {
+    display: none;
+  }
 }
 </style>

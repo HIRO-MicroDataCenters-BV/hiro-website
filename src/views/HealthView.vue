@@ -2,6 +2,7 @@
 import AppCard from '@/components/AppCard.vue';
 import { healthCards, healthGraph } from '@/constants/health-page';
 import AppFlowChart from '@/components/AppFlowChart.vue';
+import AppCardSelector from '@/components/AppCardSelector.vue';
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import AppFlowChart from '@/components/AppFlowChart.vue';
     <AppFlowChart
       :nodes="healthGraph.nodes"
       :edges="healthGraph.edges"
+      class="health-view__flow-chart"
     />
     <section class="card-section">
       <AppCard
@@ -28,25 +30,49 @@ import AppFlowChart from '@/components/AppFlowChart.vue';
         :cube-variant="card.type"
       />
     </section>
+    <AppCardSelector
+      class="health-view__card-selector"
+      :cards="healthCards"
+    />
   </div>
 </template>
 
 <style scoped>
 .health-view {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   height: 100%;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+
+  @media (--breakpoint-desktop) {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.health-view__flow-chart {
+  min-height: 400px;
 }
 
 .card-section {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  width: fit-content;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+  display: none;
+
+  @media (--breakpoint-desktop) {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 600px;
+  }
+}
+
+.health-view__card-selector {
+  @media (--breakpoint-desktop) {
+    display: none;
+  }
 }
 </style>

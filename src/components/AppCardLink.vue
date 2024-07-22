@@ -34,14 +34,16 @@ defineProps({
         <div class="app-card-link__label">
           {{ label }}
         </div>
-        <component
-          :is="routesCubesIcons[route]"
-          v-if="route"
+        <img
+          :src="routesCubesIcons[route as keyof typeof routesCubesIcons]"
+          alt="icon"
+          class="app-card-link__icon"
         />
       </div>
       <div class="app-card-link__body">
         {{ text }}
       </div>
+      <div class="app-card-link__footer">See more</div>
     </div>
   </RouterLink>
 </template>
@@ -52,14 +54,21 @@ defineProps({
   flex-direction: column;
   gap: 5px;
   position: relative;
-  padding: 30px;
-  width: 366px;
+  padding: 20px;
+  max-width: 366px;
   height: 250px;
   background: #000;
-  box-shadow: -1px 1px 16px 3px rgba(255, 255, 255, 0.25);
   cursor: pointer;
   text-decoration: none;
   color: var(--color-text);
+
+  @media (--breakpoint-tablet-large) {
+    box-shadow: -1px 1px 16px 3px rgba(255, 255, 255, 0.25);
+    transition: transform 300ms ease-out;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 }
 
 .app-card-link__title {
@@ -73,5 +82,25 @@ defineProps({
   max-width: fit-content;
   padding: 0 10px;
   font-weight: 600;
+}
+
+.app-card-link__icon {
+  width: 50px;
+  height: 50px;
+}
+
+.app-card-link__body {
+  text-align: left;
+}
+
+.app-card-link__footer {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin-top: auto;
 }
 </style>
