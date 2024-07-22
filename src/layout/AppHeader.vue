@@ -2,6 +2,7 @@
 import { RouterLink, useRouter } from 'vue-router';
 import { computed } from 'vue';
 import { routesCubesIcons } from '@/constants/cube-parts';
+import AppNavigation from '@/layout/AppNavigation.vue';
 
 const router = useRouter();
 
@@ -9,12 +10,14 @@ const currentPathName = computed(
   () => router.currentRoute.value.name || 'Home',
 );
 
-const currentPath = computed(() => router.currentRoute.value.path);
+const currentPath = computed(
+  () => router.currentRoute.value.path as keyof typeof routesCubesIcons,
+);
 </script>
 
 <template>
   <header class="app-header">
-    <nav>
+    <nav class="app-header__logo">
       <RouterLink to="/">
         <img
           alt="Hiro logo"
@@ -34,7 +37,9 @@ const currentPath = computed(() => router.currentRoute.value.path);
         {{ currentPathName }}
       </h1>
     </div>
-    <div class="app-header__heading-right"></div>
+    <div class="app-header__heading-arrows">
+      <AppNavigation />
+    </div>
   </header>
 </template>
 
@@ -51,14 +56,13 @@ const currentPath = computed(() => router.currentRoute.value.path);
   }
 }
 
-.app-header nav {
+.app-header__logo {
   display: flex;
   align-items: flex-start;
   align-self: baseline;
 
   @media (--breakpoint-desktop) {
     align-items: center;
-    flex: 1;
   }
 }
 
@@ -125,7 +129,11 @@ const currentPath = computed(() => router.currentRoute.value.path);
   }
 }
 
-.app-header__heading-right {
-  flex: 1;
+.app-header__heading-arrows {
+  align-self: end;
+  padding: 0 40px;
+  @media (--breakpoint-desktop) {
+    min-width: 181px;
+  }
 }
 </style>
