@@ -4,7 +4,7 @@ import HomeViewDesktop from './HomeViewDesktop.vue';
 </script>
 
 <template>
-  <main>
+  <main class="home-view">
     <p class="home-view__heading">
       Enhanced connectivity, automation, adaptive and learning systems, are
       driving the digital transformation of enterprises that delivers them
