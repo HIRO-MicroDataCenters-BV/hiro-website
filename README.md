@@ -1,8 +1,8 @@
-# Default Vue 3 + Vite + TypeScript Template
-Vite + Vue template with TypeScript
+# Hiro website 
+Vite + Vue app for Hiro website.
+
 - [ESLint](https://eslint.org/) is used for linting and [Prettier](https://prettier.io/) is used for code formatting.
 - [Vue Router](https://router.vuejs.org/) is included for multi-page apps, remove it if not needed.
-- [Pinia](https://pinia.esm.dev/) is included for state management, remove it if not needed.
 - Helm charts for Kubernetes are also included.
 - [PostCSS](https://postcss.org/) is used for CSS processing and includes CSS Nesting support plugin.
 
@@ -77,3 +77,5 @@ pnpm lint
 ```sh
 pnpm format
 ```
+
+_Neither the content of the website nor the design was done by the frontend team._
