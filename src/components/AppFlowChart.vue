@@ -33,6 +33,7 @@ onBeforeUnmount(() => {
     :zoom-on-scroll="false"
     :zoom-on-pinch="false"
     :zoom-on-double-click="false"
+    :elements-selectable="false"
     :prevent-scrolling="true"
   />
 </template>
