@@ -2,6 +2,9 @@ import { cubeParts } from '@/constants/cube-parts';
 import type { Edge, Node } from '@vue-flow/core';
 import { Position } from '@vue-flow/core';
 
+import test from '@/assets/videos/industry/test.mp4';
+import test1 from '@/assets/videos/industry/test1.mp4';
+
 export const industryCards = [
   {
     title: 'Edge Cloud Services',
@@ -72,15 +75,48 @@ export const industryGraph = {
     },
     {
       id: '4',
-      position: { x: 150, y: 50 },
+      position: { x: 200, y: 50 },
       targetPosition: Position.Bottom,
       class: 'vue-flow__node--ecs-gov',
     },
     {
       id: '5',
-      position: { x: 120, y: 200 },
+      position: { x: 220, y: 200 },
       targetPosition: Position.Left,
       class: 'vue-flow__node--ecs-ds',
+    },
+    {
+      id: '6',
+      position: { x: 0, y: 0 },
+      type: 'video',
+      data: {
+        videoFullFileUrl: 'https://www.youtube.com/watch?v=9bZkp7q19f0',
+        videoFile: test,
+      },
+    },
+    {
+      id: '7',
+      position: { x: 250, y: 15 },
+      type: 'video',
+      data: {
+        videoFullFileUrl: 'https://www.youtube.com/watch?v=9bZkp7q19f0',
+        videoFile: test1,
+      },
+    },
+    {
+      id: '8',
+      position: { x: 200, y: 200 },
+      type: 'video',
+    },
+    {
+      id: '9',
+      position: { x: 100, y: 120 },
+      type: 'video',
+    },
+    {
+      id: '10',
+      position: { x: 15, y: 250 },
+      type: 'video',
     },
   ],
   edges: <Edge[]>[
