@@ -2,8 +2,8 @@ import { cubeParts } from '@/constants/cube-parts';
 import type { Edge, Node } from '@vue-flow/core';
 import { Position } from '@vue-flow/core';
 
-import test from '@/assets/videos/industry/test.mp4';
-import test1 from '@/assets/videos/industry/test1.mp4';
+import test from '@/assets/videos/test/test.mp4';
+import test1 from '@/assets/videos/test/test1.mp4';
 
 export const industryCards = [
   {
