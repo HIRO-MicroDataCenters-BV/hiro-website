@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps({
+defineProps({
   data: {
     type: Object,
     required: true,
@@ -21,6 +21,7 @@ const props = defineProps({
           autoplay
           loop
           muted
+          playsinline
         >
           Your browser does not support the video tag.
         </video>
