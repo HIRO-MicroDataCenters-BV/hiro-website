@@ -3,7 +3,7 @@ import AppCard from '@/components/AppCard.vue';
 import {
   agricultureCards,
   agricultureGraph,
-} from '@/constants/agriculture-page';
+} from '@/constants/agriculture-page/agriculture-page';
 import AppFlowChart from '@/components/AppFlowChart.vue';
 import AppCardSelector from '@/components/AppCardSelector.vue';
 </script>

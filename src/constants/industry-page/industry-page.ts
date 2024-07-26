@@ -2,8 +2,7 @@ import { cubeParts } from '@/constants/cube-parts';
 import type { Edge, Node } from '@vue-flow/core';
 import { Position } from '@vue-flow/core';
 
-import test from '@/assets/videos/test/test.mp4';
-import test1 from '@/assets/videos/test/test1.mp4';
+import { industryVideos } from '@/constants/industry-page/industry-videos';
 
 export const industryCards = [
   {
@@ -90,8 +89,8 @@ export const industryGraph = {
       position: { x: 0, y: 0 },
       type: 'video',
       data: {
-        videoFullFileUrl: 'https://www.youtube.com/watch?v=9bZkp7q19f0',
-        videoFile: test,
+        videoFullFileUrl: industryVideos.industry1.videoFullFileUrl,
+        videoFile: industryVideos.industry1.videoFile,
       },
     },
     {
@@ -99,24 +98,36 @@ export const industryGraph = {
       position: { x: 250, y: 15 },
       type: 'video',
       data: {
-        videoFullFileUrl: 'https://www.youtube.com/watch?v=9bZkp7q19f0',
-        videoFile: test1,
+        videoFullFileUrl: industryVideos.industry2.videoFullFileUrl,
+        videoFile: industryVideos.industry2.videoFile,
       },
     },
     {
       id: '8',
       position: { x: 200, y: 200 },
       type: 'video',
+      data: {
+        videoFullFileUrl: industryVideos.industry3.videoFullFileUrl,
+        videoFile: industryVideos.industry3.videoFile,
+      },
     },
     {
       id: '9',
       position: { x: 100, y: 120 },
       type: 'video',
+      data: {
+        videoFullFileUrl: industryVideos.industry4.videoFullFileUrl,
+        videoFile: industryVideos.industry4.videoFile,
+      },
     },
     {
       id: '10',
       position: { x: 15, y: 250 },
       type: 'video',
+      data: {
+        videoFullFileUrl: industryVideos.industry5.videoFullFileUrl,
+        videoFile: industryVideos.industry5.videoFile,
+      },
     },
   ],
   edges: <Edge[]>[
