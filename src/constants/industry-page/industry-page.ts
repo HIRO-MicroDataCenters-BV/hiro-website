@@ -80,13 +80,13 @@ export const industryGraph = {
     },
     {
       id: '5',
-      position: { x: 220, y: 200 },
+      position: { x: 220, y: 220 },
       targetPosition: Position.Left,
       class: 'vue-flow__node--ecs-ds',
     },
     {
       id: '6',
-      position: { x: 0, y: 0 },
+      position: { x: 60, y: 0 },
       type: 'video',
       data: {
         videoFullFileUrl: industryVideos.industry1.videoFullFileUrl,
@@ -104,7 +104,7 @@ export const industryGraph = {
     },
     {
       id: '8',
-      position: { x: 200, y: 200 },
+      position: { x: 250, y: 280 },
       type: 'video',
       data: {
         videoFullFileUrl: industryVideos.industry3.videoFullFileUrl,
@@ -113,20 +113,22 @@ export const industryGraph = {
     },
     {
       id: '9',
-      position: { x: 100, y: 120 },
+      position: { x: 130, y: 120 },
       type: 'video',
       data: {
         videoFullFileUrl: industryVideos.industry4.videoFullFileUrl,
         videoFile: industryVideos.industry4.videoFile,
+        width: 160,
       },
     },
     {
       id: '10',
-      position: { x: 15, y: 250 },
+      position: { x: 0, y: 300 },
       type: 'video',
       data: {
         videoFullFileUrl: industryVideos.industry5.videoFullFileUrl,
         videoFile: industryVideos.industry5.videoFile,
+        width: 140,
       },
     },
   ],
