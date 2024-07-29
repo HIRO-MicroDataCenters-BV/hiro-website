@@ -49,8 +49,8 @@ onBeforeUnmount(() => {
 .vue-flow__node {
   border: 0;
   background-size: cover;
-  width: 50px;
-  height: 57px;
+  min-width: 50px;
+  min-height: 57px;
   z-index: 1 !important;
 }
 

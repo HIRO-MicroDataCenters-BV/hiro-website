@@ -1,21 +1,33 @@
 <script setup lang="ts">
-defineProps({
+import { computed } from 'vue';
+
+const props = defineProps({
   data: {
     type: Object,
     required: true,
   },
 });
+
+const width = computed(() => {
+  return props.data?.width || 120;
+});
 </script>
 
 <template>
-  <div class="app-flow-chart-video-node">
+  <div
+    class="app-flow-chart-video-node"
+    :style="{
+      width: `${width}px`,
+      height: `${width * 0.5625}px`,
+    }"
+  >
     <div class="app-flow-chart-video-node__video">
       <a
         :href="data.videoFullFileUrl || 'https://youtu.be/dQw4w9WgXcQ'"
         target="_blank"
       >
         <video
-          width="80"
+          :width="width"
           class="app-flow-chart-video-node__video-element"
           :src="data.videoFile || 'https://www.w3schools.com/html/mov_bbb.mp4'"
           autoplay
@@ -31,11 +43,9 @@ defineProps({
 </template>
 
 <style scoped>
-.app-flow-chart-video-node__video {
+.app-flow-chart-video-node {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(80px * 0.5625);
-  width: 80px;
 }
 </style>
