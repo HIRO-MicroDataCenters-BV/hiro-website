@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AppCard from '@/components/AppCard.vue';
-import { healthCards, healthGraph } from '@/constants/health-page';
+import { healthCards, healthGraph } from '@/constants/health-page/health-page';
 import AppFlowChart from '@/components/AppFlowChart.vue';
 import AppCardSelector from '@/components/AppCardSelector.vue';
 </script>

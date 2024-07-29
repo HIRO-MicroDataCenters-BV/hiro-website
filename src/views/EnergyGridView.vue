@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import AppCard from '@/components/AppCard.vue';
-import { energyGridCards, energyGridGraph } from '@/constants/energy-grid-page';
+import {
+  energyGridCards,
+  energyGridGraph,
+} from '@/constants/energy-grid-page/energy-grid-page';
 import AppFlowChart from '@/components/AppFlowChart.vue';
 import AppCardSelector from '@/components/AppCardSelector.vue';
 </script>
