@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import AppCard from '@/components/AppCard.vue';
-import { industryCards, industryGraph } from '@/constants/industry-page';
+import {
+  industryCards,
+  industryGraph,
+} from '@/constants/industry-page/industry-page';
 import AppFlowChart from '@/components/AppFlowChart.vue';
 import AppCardSelector from '@/components/AppCardSelector.vue';
 </script>

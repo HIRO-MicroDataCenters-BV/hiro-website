@@ -2,6 +2,8 @@ import { cubeParts } from '@/constants/cube-parts';
 import type { Edge, Node } from '@vue-flow/core';
 import { Position } from '@vue-flow/core';
 
+import { industryVideos } from '@/constants/industry-page/industry-videos';
+
 export const industryCards = [
   {
     title: 'Edge Cloud Services',
@@ -72,15 +74,62 @@ export const industryGraph = {
     },
     {
       id: '4',
-      position: { x: 150, y: 50 },
+      position: { x: 200, y: 50 },
       targetPosition: Position.Bottom,
       class: 'vue-flow__node--ecs-gov',
     },
     {
       id: '5',
-      position: { x: 120, y: 200 },
+      position: { x: 220, y: 220 },
       targetPosition: Position.Left,
       class: 'vue-flow__node--ecs-ds',
+    },
+    {
+      id: '6',
+      position: { x: 60, y: 0 },
+      type: 'video',
+      data: {
+        videoFullFileUrl: industryVideos.industry1.videoFullFileUrl,
+        videoFile: industryVideos.industry1.videoFile,
+      },
+    },
+    {
+      id: '7',
+      position: { x: 250, y: 15 },
+      type: 'video',
+      data: {
+        videoFullFileUrl: industryVideos.industry2.videoFullFileUrl,
+        videoFile: industryVideos.industry2.videoFile,
+      },
+    },
+    {
+      id: '8',
+      position: { x: 250, y: 280 },
+      type: 'video',
+      data: {
+        videoFullFileUrl: industryVideos.industry3.videoFullFileUrl,
+        videoFile: industryVideos.industry3.videoFile,
+      },
+    },
+    {
+      id: '9',
+      position: { x: 130, y: 120 },
+      type: 'video',
+      data: {
+        videoFullFileUrl: industryVideos.industry4.videoFullFileUrl,
+        videoFile: industryVideos.industry4.videoFile,
+        width: 160,
+      },
+    },
+    {
+      id: '10',
+      position: { x: 0, y: 300 },
+      type: 'video',
+      data: {
+        videoFullFileUrl: industryVideos.industry5.videoFullFileUrl,
+        videoFile: industryVideos.industry5.videoFile,
+        width: 140,
+      },
     },
   ],
   edges: <Edge[]>[

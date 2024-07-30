@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AppCard from '@/components/AppCard.vue';
-import { cityCards, cityGraph } from '@/constants/city-page';
+import { cityCards, cityGraph } from '@/constants/city-page/city-page';
 import AppFlowChart from '@/components/AppFlowChart.vue';
 import AppCardSelector from '@/components/AppCardSelector.vue';
 </script>
