@@ -124,9 +124,6 @@ const currentPath = computed(
     top: 20px;
     width: initial;
   }
-
-  @media (--breakpoint-desktop) {
-  }
 }
 
 .app-header__heading-arrows {

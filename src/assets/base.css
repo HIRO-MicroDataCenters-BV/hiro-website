@@ -35,7 +35,7 @@
 
 body {
   color: var(--color-text);
-  background: #050611 url('backgrounds/background-mobile.svg');
+  background: var(--color-background) url('backgrounds/background-mobile.svg');
   background-size: cover;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
@@ -50,7 +50,7 @@ body {
   }
 
   @media (--breakpoint-desktop) {
-    background: url('backgrounds/background.svg');
+    background: var(--color-background) url('backgrounds/background.svg');
     background-size: cover;
   }
 }
