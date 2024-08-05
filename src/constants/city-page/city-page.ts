@@ -2,6 +2,8 @@ import { cubeParts } from '@/constants/cube-parts';
 import type { Edge, Node } from '@vue-flow/core';
 import { Position } from '@vue-flow/core';
 
+import { cityVideos } from '@/constants/city-page/city-videos';
+
 export const cityCards = [
   {
     title: 'Data Spaces',
@@ -82,6 +84,54 @@ export const cityGraph = {
       position: { x: 150, y: 200 },
       targetPosition: Position.Bottom,
       class: 'vue-flow__node--ecs-ds-cog',
+    },
+    {
+      id: '6',
+      position: { x: -120, y: 0 },
+      type: 'video',
+      data: {
+        videoFile: cityVideos.city1.videoFile,
+        videoFullFileUrl: cityVideos.city1.videoFullFileUrl,
+      },
+    },
+    {
+      id: '7',
+      position: { x: -140, y: 140 },
+      type: 'video',
+      data: {
+        videoFile: cityVideos.city2.videoFile,
+        videoFullFileUrl: cityVideos.city2.videoFullFileUrl,
+        width: 140,
+      },
+    },
+    {
+      id: '8',
+      position: { x: -120, y: 280 },
+      type: 'video',
+      data: {
+        videoFile: cityVideos.city3.videoFile,
+        videoFullFileUrl: cityVideos.city3.videoFullFileUrl,
+      },
+    },
+    {
+      id: '9',
+      position: { x: 120, y: 270 },
+      type: 'video',
+      data: {
+        videoFile: cityVideos.city4.videoFile,
+        videoFullFileUrl: cityVideos.city4.videoFullFileUrl,
+        width: 150,
+      },
+    },
+    {
+      id: '10',
+      position: { x: 150, y: 0 },
+      type: 'video',
+      data: {
+        videoFile: cityVideos.city5.videoFile,
+        videoFullFileUrl: cityVideos.city5.videoFullFileUrl,
+        width: 130,
+      },
     },
   ],
   edges: <Edge[]>[

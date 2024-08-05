@@ -95,7 +95,7 @@ export const industryGraph = {
     },
     {
       id: '7',
-      position: { x: 250, y: 15 },
+      position: { x: 255, y: 15 },
       type: 'video',
       data: {
         videoFullFileUrl: industryVideos.industry2.videoFullFileUrl,
@@ -123,7 +123,7 @@ export const industryGraph = {
     },
     {
       id: '10',
-      position: { x: 0, y: 300 },
+      position: { x: 20, y: 310 },
       type: 'video',
       data: {
         videoFullFileUrl: industryVideos.industry5.videoFullFileUrl,

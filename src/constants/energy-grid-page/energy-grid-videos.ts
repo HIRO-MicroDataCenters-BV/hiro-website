@@ -1,9 +1,9 @@
-import energyGrid1 from '@/assets/videos/energy-grid/energy-grid-1.mp4';
-import energyGrid2 from '@/assets/videos/energy-grid/energy-grid-2.mp4';
-import energyGrid3 from '@/assets/videos/energy-grid/energy-grid-3.mp4';
-import energyGrid4 from '@/assets/videos/energy-grid/energy-grid-4.mp4';
-import energyGrid5 from '@/assets/videos/energy-grid/energy-grid-5.mp4';
-import energyGrid6 from '@/assets/videos/energy-grid/energy-grid-6.mp4';
+import energyGrid1 from '@/assets/videos/energy-grid/energy-grid_1.mp4';
+import energyGrid2 from '@/assets/videos/energy-grid/energy-grid_2.mp4';
+import energyGrid3 from '@/assets/videos/energy-grid/energy-grid_3.mp4';
+import energyGrid4 from '@/assets/videos/energy-grid/energy-grid_4.mp4';
+import energyGrid5 from '@/assets/videos/energy-grid/energy-grid_5.mp4';
+import energyGrid6 from '@/assets/videos/energy-grid/energy-grid_6.mp4';
 
 export const energyGridVideos = {
   energyGrid1: {

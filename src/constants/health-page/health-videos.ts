@@ -1,8 +1,8 @@
-import health1 from '@/assets/health-videos/health1.mp4';
-import health2 from '@/assets/health-videos/health2.mp4';
-import health3 from '@/assets/health-videos/health3.mp4';
-import health4 from '@/assets/health-videos/health4.mp4';
-import health5 from '@/assets/health-videos/health5.mp4';
+import health1 from '@/assets/videos/health/health_1.mp4';
+import health2 from '@/assets/videos/health/health_2.mp4';
+import health3 from '@/assets/videos/health/health_3.mp4';
+import health4 from '@/assets/videos/health/health_4.mp4';
+import health5 from '@/assets/videos/health/health_5.mp4';
 
 export const healthVideos = {
   health1: {
