@@ -2,6 +2,8 @@ import { cubeParts } from '@/constants/cube-parts';
 import type { Edge, Node } from '@vue-flow/core';
 import { Position } from '@vue-flow/core';
 
+import { healthVideos } from '@/constants/health-page/health-videos';
+
 export const healthCards = [
   {
     title: 'Cognitive Engine',
@@ -60,13 +62,13 @@ export const healthGraph = {
     },
     {
       id: '2',
-      position: { x: 50, y: 125 },
+      position: { x: 10, y: 150 },
       class: 'vue-flow__node--ecs-ds-cog-gov',
     },
     {
       id: '3',
-      position: { x: 200, y: 100 },
-      sourcePosition: Position.Right,
+      position: { x: 150, y: 170 },
+      sourcePosition: Position.Bottom,
       targetPosition: Position.Bottom,
       class: 'vue-flow__node--ecs',
     },
@@ -75,6 +77,61 @@ export const healthGraph = {
       position: { x: 150, y: 20 },
       targetPosition: Position.Bottom,
       class: 'vue-flow__node--ecs-gov',
+    },
+    {
+      id: '5',
+      position: { x: 15, y: 300 },
+      targetPosition: Position.Bottom,
+      class: 'vue-flow__node--ecs-ds-cog',
+    },
+    {
+      id: '6',
+      position: { x: -120, y: 0 },
+      type: 'video',
+      data: {
+        videoFile: healthVideos.health1.videoFile,
+        videoFullFileUrl: healthVideos.health1.videoFullFileUrl,
+      },
+    },
+    {
+      id: '7',
+      position: { x: -120, y: 230 },
+      type: 'video',
+      data: {
+        videoFile: healthVideos.health2.videoFile,
+        videoFullFileUrl: healthVideos.health2.videoFullFileUrl,
+        width: 140,
+      },
+    },
+    {
+      id: '8',
+      position: { x: 150, y: 270 },
+      type: 'video',
+      data: {
+        videoFile: healthVideos.health3.videoFile,
+        videoFullFileUrl: healthVideos.health3.videoFullFileUrl,
+        width: 160,
+      },
+    },
+    {
+      id: '9',
+      position: { x: -150, y: 100 },
+      type: 'video',
+      data: {
+        videoFile: healthVideos.health4.videoFile,
+        videoFullFileUrl: healthVideos.health4.videoFullFileUrl,
+        width: 140,
+      },
+    },
+    {
+      id: '10',
+      position: { x: 190, y: 80 },
+      type: 'video',
+      data: {
+        videoFile: healthVideos.health5.videoFile,
+        videoFullFileUrl: healthVideos.health5.videoFullFileUrl,
+        width: 140,
+      },
     },
   ],
   edges: <Edge[]>[
@@ -86,16 +143,16 @@ export const healthGraph = {
       type: 'straight',
     },
     {
-      id: 'e2->3',
-      source: '2',
+      id: 'e1->3',
+      source: '1',
       target: '3',
       animated: true,
       type: 'straight',
     },
     {
-      id: 'e2->4',
+      id: 'e2->5',
       source: '2',
-      target: '4',
+      target: '5',
       animated: true,
       type: 'straight',
     },
@@ -103,6 +160,27 @@ export const healthGraph = {
       id: 'e1->4',
       source: '1',
       target: '4',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e3->4',
+      source: '3',
+      target: '4',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e3->5',
+      source: '3',
+      target: '5',
+      animated: true,
+      type: 'straight',
+    },
+    {
+      id: 'e2->3',
+      source: '2',
+      target: '3',
       animated: true,
       type: 'straight',
     },
