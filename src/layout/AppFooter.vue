@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import IconCross from '@/assets/cross.svg';
+import IconLinkedin from '@/assets/linkedin.svg';
 
 const isContactSectionVisible = ref(false);
 const showContactSection = () => {
@@ -29,16 +30,24 @@ const hideContactSection = () => {
         <div class="app-footer__contact-section-placeholder"></div>
         <address class="app-footer__contact-address">
           <h3>Contact Us</h3>
-          <p>
-            Email:
-            <a href="mailto:info@hiro-microdatacenters.nl">
-              info@hiro-microdatacenters.nl
+          <div class="app-footer__contact-address-container">
+            <p>
+              Email:
+              <a href="mailto:info@hiro-microdatacenters.nl">
+                info@hiro-microdatacenters.nl
+              </a>
+            </p>
+            <a
+              href="https://www.linkedin.com/company/hiro-microdatacenters/"
+              target="_blank"
+            >
+              <IconLinkedin scale="2" />
             </a>
-          </p>
+          </div>
         </address>
         <IconCross
           class="app-footer__contact-exit"
-          scale="2"
+          scale="1"
           @click="hideContactSection"
         />
       </section>
@@ -121,17 +130,21 @@ const hideContactSection = () => {
   background: url('assets/footer-full-bg-mobile.svg') top no-repeat;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 350px;
 
   @media (--breakpoint-desktop) {
     background: url('assets/footer-full-bg.svg') top no-repeat;
     width: 700px;
+    justify-content: space-between;
   }
 }
 
 .app-footer__contact-section-placeholder {
-  margin: 20px;
-  padding: 9px;
+  @media (--breakpoint-desktop) {
+    margin: 20px;
+    padding: 9px;
+  }
 }
 
 .app-footer__contact-address {
@@ -149,6 +162,8 @@ const hideContactSection = () => {
 
   p {
     font-weight: 900;
+    padding-right: 10px;
+    border-right: var(--color-text) 1px solid;
   }
 
   a {
@@ -156,11 +171,22 @@ const hideContactSection = () => {
   }
 }
 
+.app-footer__contact-address-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
 .app-footer__contact-exit {
   justify-self: end;
   cursor: pointer;
   color: white;
-  scale: 1.5;
-  margin: 20px;
+  margin-right: 10px;
+
+  @media (--breakpoint-desktop) {
+    scale: 1.5;
+    margin: 20px;
+  }
 }
 </style>
